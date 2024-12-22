@@ -42,7 +42,7 @@ const Navbar = () => {
                                 to="/meetgreet"
                                 className="dropdown-item"
                             >
-                                Meet and Greet
+                                Meet & Greet
                             </NavLink>
                             <NavLink
                                 to="/vip"

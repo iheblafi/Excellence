@@ -42,7 +42,7 @@ function Home() {
                                 <div className="service-item rounded pt-3" style={{ maxHeight: "370px" }}>
                                     <div className="p-4">
                                         <i className="fa fa-3x fa-handshake text-primary mb-4"></i>
-                                        <h5>Meet and Greet</h5>
+                                        <h5>Meet & Greet</h5>
                                         <p>The Excellence Airport Meet and Greet service ensures that every traveller experiences ease,
                                             comfort, and luxury, while navigating through the airport.</p>
                                     </div>
@@ -342,100 +342,85 @@ function Home() {
                                     <div className="row g-4">
                                         <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
-                                                <img className="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style={{ width: '80px' }} />
+                                                <img className="flex-shrink-0 img-fluid rounded" src="img/meetairport.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Chicken Burger</span>
-                                                        <span className="text-primary">$115</span>
+                                                        <span>Meet</span>
                                                     </h5>
-                                                    <small className="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                                    <small className="fst-italic">Agents meet passengers with a name board at the airbridge or terminal.</small>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
-                                                <img className="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style={{ width: '80px' }} />
+                                                <img className="flex-shrink-0 img-fluid rounded" src="img/airport2.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Chicken Burger</span>
-                                                        <span className="text-primary">$115</span>
+                                                        <span>Assist</span>
                                                     </h5>
-                                                    <small className="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                                    <small className="fst-italic">Assistance is offered for baggage claim, if necessary, and porter services, if pre-booked.</small>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
-                                                <img className="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style={{ width: '80px' }} />
+                                                <img className="flex-shrink-0 img-fluid rounded" src="img/fasttrack.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Chicken Burger</span>
-                                                        <span className="text-primary">$115</span>
+                                                        <span>Fast Track</span>
                                                     </h5>
-                                                    <small className="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                                    <small className="fst-italic">Fast-track access is utilized for security and immigration formalities, ensuring a smooth transition.
+                                                    </small>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
-                                                <img className="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style={{ width: '80px' }} />
+                                                <img className="flex-shrink-0 img-fluid rounded" src="img/escortinside.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Chicken Burger</span>
-                                                        <span className="text-primary">$115</span>
+                                                        <span>Departure to boarding gate</span>
                                                     </h5>
-                                                    <small className="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                                    <small className="fst-italic">Passengers are guided to the departure lounge, if reserved, or boarding gate.</small>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
-                                                <img className="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style={{ width: '80px' }} />
+                                                <img className="flex-shrink-0 img-fluid rounded" src="img/chauffeurdeparture.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Chicken Burger</span>
-                                                        <span className="text-primary">$115</span>
+                                                        <span>Chauffeur service</span>
                                                     </h5>
-                                                    <small className="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                                    <small className="fst-italic">Chauffeur service from the aircraft to the VIP terminal for a relaxing layover.</small>
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
-                                                <img className="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style={{ width: '80px' }} />
+                                                <img className="flex-shrink-0 img-fluid rounded" src="img/escortoutside.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Chicken Burger</span>
-                                                        <span className="text-primary">$115</span>
+                                                        <span>Chauffeur transport</span>
                                                     </h5>
-                                                    <small className="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                                    <small className="fst-italic">Chauffeur transport back to the aircraft for the next leg of the journey.                                                    </small>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
-                                                <img className="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style={{ width: '80px' }} />
+                                                <img className="flex-shrink-0 img-fluid rounded" src="img/lugguage.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Chicken Burger</span>
-                                                        <span className="text-primary">$115</span>
+                                                        <span>Assistance with luggage</span>
                                                     </h5>
-                                                    <small className="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                                    <small className="fst-italic">Assistance with luggage and airport formalities.</small>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-6">
-                                            <div className="d-flex align-items-center">
-                                                <img className="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style={{ width: '80px' }} />
-                                                <div className="w-100 d-flex flex-column text-start ps-4">
-                                                    <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Chicken Burger</span>
-                                                        <span className="text-primary">$115</span>
-                                                    </h5>
-                                                    <small className="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
-                                                </div>
-                                            </div>
-                                        </div>
+                                      
                                     </div>
                                 </div>
                             </div>

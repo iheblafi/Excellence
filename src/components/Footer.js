@@ -17,7 +17,7 @@ const Footer = () => {
                         <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
                         <p className="mb-2 text-start"><i className="fa fa-map-marker-alt me-3"></i>9 Street Jean-Jacques Rousseau</p>
                         <p className="mb-2 text-start"><i className="fa fa-phone-alt me-3"></i>+33699268175</p>
-                        <p className="mb-2 text-start"><i className="fa fa-envelope me-3"></i>contact@contact@excellenceairport.fr</p>
+                        <p className="mb-2 text-start"><i className="fa fa-envelope me-3"></i>contact@excellenceairport.fr</p>
                         <div className="d-flex pt-2">
                             <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-twitter"></i></a>
                             <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-facebook-f"></i></a>
