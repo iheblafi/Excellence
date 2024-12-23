@@ -53,13 +53,13 @@ function MeetGreet() {
               <div className="col-lg-6">
                 <h5 className="section-title ff-secondary text-start text-primary fw-normal">Meet & Greet</h5>
                 <h1 className="mb-4">Airport Meet & Greet</h1>
-                <p className="mb-4">Imagine stepping into the bustling world of an international airport, where the hum of activity can feel overwhelming. But instead of being swept into the chaos, you're greeted with a warm smile and the promise of effortless travel. This is the essence of the Excellence Airport Meet & Greet service—a sanctuary of ease, comfort, and luxury amidst the complexities of modern air travel.
+                <p className="mb-4" style={{ textAlign: 'justify' }}>Imagine stepping into the bustling world of an international airport, where the hum of activity can feel overwhelming. But instead of being swept into the chaos, you're greeted with a warm smile and the promise of effortless travel. This is the essence of the Excellence Airport Meet & Greet service a sanctuary of ease, comfort, and luxury amidst the complexities of modern air travel.
 
                   From the moment you arrive, a dedicated representative becomes your guide, expertly navigating the labyrinth of the airport. Whether it is your first flight or your hundredth, their knowledge and care make every step feel effortless. Long lines become a distant memory as you glide through fast-track processing, bypassing the usual delays with grace.
 
                   As you move through the airport, the service transforms each transition into a moment of calm. Check-in is no longer a chore, security checks feel less daunting, and even the busiest terminals seem to slow down just for you. For those in transit, the service ensures that tight connections are met with precision and ease, turning what could be a stressful layover into an opportunity to relax.
 
-                  The journey doesnt end at the gate. Whether you're departing, arriving, or simply passing through, the Meet & Greet service is tailored to your every need, ensuring that no detail is overlooked. It is not just about getting to your destination—it is about how you feel along the way: relaxed, cared for, and completely at ease.
+                  The journey doesnt end at the gate. Whether you're departing, arriving, or simply passing through, the Meet & Greet service is tailored to your every need, ensuring that no detail is overlooked. It is not just about getting to your destination, it is about how you feel along the way: relaxed, cared for, and completely at ease.
 
                   With Excellence Airport Meet & Greet, air travel transforms from a logistical challenge into a luxurious experience, where every moment is designed to leave you feeling like a priority. It is not just a service; it is a story of effortless journeys and unforgettable care. </p>
 
@@ -106,7 +106,7 @@ function MeetGreet() {
                 <div id="tab-1" className="tab-pane fade show p-0 active">
                   <div className="row g-5">
 
-                    <div className="col-lg-4">
+                    <div className="col-lg-6">
                       <div className="d-flex align-items-center">
                         <img className="flex-shrink-0 img-fluid rounded" src="img/meetairport.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
@@ -117,7 +117,7 @@ function MeetGreet() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-6">
                       <div className="d-flex align-items-center">
                         <img className="flex-shrink-0 img-fluid rounded" src="img/fasttrack.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
@@ -128,7 +128,7 @@ function MeetGreet() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-6">
                       <div className="d-flex align-items-center">
                         <img className="flex-shrink-0 img-fluid rounded" src="img/escortinside.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
@@ -150,7 +150,7 @@ function MeetGreet() {
                 </div>
                 <div id="tab-2" className="tab-pane fade show p-0">
                   <div className="row g-4">
-                    <div className="col-lg-4">
+                    <div className="col-lg-6">
                       <div className="d-flex align-items-center">
                         <img className="flex-shrink-0 img-fluid rounded" src="img/coordination.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
@@ -162,7 +162,7 @@ function MeetGreet() {
                       </div>
                     </div>
 
-                    <div className="col-lg-4">
+                    <div className="col-lg-6">
                       <div className="d-flex align-items-center">
                         <img className="flex-shrink-0 img-fluid rounded" src="img/fasttracklanes.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
@@ -173,7 +173,7 @@ function MeetGreet() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-6">
                       <div className="d-flex align-items-center">
                         <img className="flex-shrink-0 img-fluid rounded" src="img/boardinggate.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
