@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Booking from './pages/Booking';
 import Menu from './pages/Menu';
-import Team from './pages/Team';
+import Team from './pages/about/Team';
 import Testimonial from './pages/Testimonial';
 import Chauffeur from './pages/services/Chauffeur';
 import MeetGreet from './pages/services/MeetGreet';
@@ -22,6 +22,8 @@ import ProfileManagement from './pages/profile/ProfileManagement';
 import BookingHistory from './pages/profile/BookingHistory';
 import PaymentMethods from './pages/profile/PaymentMethods';
 import Support from './pages/contact/Support';
+
+import './utils/i18n';
 
 
 function App() {

@@ -1,9 +1,12 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+
+    const { t } = useTranslation();
     return (
 
         <div>
@@ -22,8 +25,11 @@ function Home() {
                         <div className="container my-5 py-5">
                             <div className="row align-items-center g-5">
                                 <div className="col-lg-6 text-center text-lg-start">
-                                    <h1 className="display-3 text-white animated slideInLeft">Enjoy Our<br />Professional Service</h1>
-                                    <p className="text-white animated slideInLeft mb-4 pb-2">Traveling is a about having good times and focusing only about important things. Let us manage the details while you enjoy the journey</p>
+                                    {/* <h1 className="display-3 text-white animated slideInLeft">Enjoy Our<br />Professional Service</h1> */}
+                                    <h1 className="display-3 text-white animated slideInLeft">
+                                        {t('EnjoyMessage')}
+                                    </h1>
+                                    <p className="text-white animated slideInLeft mb-4 pb-2">{t('TravelingMessage')}</p>
                                     <a href="" className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Service</a>
                                 </div>
                                 <div className="col-lg-6 text-center text-lg-end overflow-hidden">
@@ -130,7 +136,8 @@ function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <a className="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                                <NavLink className="btn btn-primary py-3 px-5 mt-2" to="/companyhistory">Read More</NavLink>
+
                             </div>
                         </div>
                     </div>
@@ -191,7 +198,7 @@ function Home() {
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
                                                         <span>Fast track</span>
                                                     </h5>
-                                                    <small className="fst-italic">Passengers are escorted through immigration and customs using fast track lanes to minimize waiting times.                                                    </small>
+                                                    <small className="fst-italic">Passengers are escorted through immigration and customs using fast track lanes to minimize waiting times.</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -301,7 +308,7 @@ function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                       
+
                                         <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/combination.jpg" alt="" style={{ width: '80px' }} />
@@ -396,7 +403,7 @@ function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/escortoutside.jpg" alt="" style={{ width: '80px' }} />
@@ -420,7 +427,7 @@ function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                      
+
                                     </div>
                                 </div>
                             </div>

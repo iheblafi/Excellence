@@ -49,7 +49,7 @@ function AvaialbleCars() {
                             </div>
                             <div className="col-lg-6">
                                 <h5 className="section-title ff-secondary text-start text-primary fw-normal">Available Cars</h5>
-                                <h1 className="mb-4">Abput Our Available cars</h1>
+                                <h1 className="mb-4">About Our Available cars</h1>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
 
                                     Excellence Airport Chauffeur-Driven Transfers ensure unmatched 

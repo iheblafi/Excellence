@@ -96,29 +96,26 @@ const Navbar = () => {
                             About Us
                         </a>
                         <div className="dropdown-menu m-0">
-                            <NavLink
-                                to="/team"
-                                className="dropdown-item"
-                            >
-                                Team
-                            </NavLink>
-                            <NavLink
+
+                        <NavLink
                                 to="/companyhistory"
                                 className="dropdown-item"
                             >
-                                Company History
+                                Company History & Team
                             </NavLink>
                             <NavLink
                                 to="/values"
                                 className="dropdown-item"
                             >
-                               Values and mission statements
+                               Values & mission statements
                             </NavLink>
+                           
+                            
                             <NavLink
                                 to="/terms"
                                 className="dropdown-item"
                             >
-                               Terms and policies
+                               Terms & policies
                             </NavLink>
                         </div>
                     </div>
