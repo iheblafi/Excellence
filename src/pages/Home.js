@@ -30,7 +30,7 @@ function Home() {
                                         {t('EnjoyMessage')}
                                     </h1>
                                     <p className="text-white animated slideInLeft mb-4 pb-2">{t('TravelingMessage')}</p>
-                                    <a href="" className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Service</a>
+                                    <a href="" className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">{t('BookService')}</a>
                                 </div>
                                 <div className="col-lg-6 text-center text-lg-end overflow-hidden">
                                     <img className="img-fluid" src="img/heroo.png" alt="" />
@@ -48,9 +48,8 @@ function Home() {
                                 <div className="service-item rounded pt-3" style={{ maxHeight: "370px" }}>
                                     <div className="p-4">
                                         <i className="fa fa-3x fa-handshake text-primary mb-4"></i>
-                                        <h5>Meet & Greet</h5>
-                                        <p>The Excellence Airport Meet and Greet service ensures that every traveller experiences ease,
-                                            comfort, and luxury, while navigating through the airport.</p>
+                                        <h5>{t('Meet&Greet')}</h5>
+                                        <p>{t('MeetDesc')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -58,9 +57,8 @@ function Home() {
                                 <div className="service-item rounded pt-3" style={{ maxHeight: "370px" }}>
                                     <div className="p-4">
                                         <i className="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                                        <h5>Profesional Drivers</h5>
-                                        <p>Excellence Airport Driven Transfers combine comfort, professionalism and style to cater
-                                            to discerning clients whether for business or leisure.</p>
+                                        <h5>{t('ProfesionalDrivers')}</h5>
+                                        <p>{t('DriversDesc')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -69,9 +67,8 @@ function Home() {
                                 <div className="service-item rounded pt-3" style={{ maxHeight: "370px" }}>
                                     <div className="p-4">
                                         <i className="fa fa-3x fa-star text-primary mb-4"></i>
-                                        <h5>VIP Terminal</h5>
-                                        <p>The VIP Terminal Service provides travellers with exclusive access to private terminals where
-                                            all airport procedures, are handled on their behalf.</p>
+                                        <h5>{t('VIPTerminal')}</h5>
+                                        <p>{t('VIPDesc')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -79,8 +76,8 @@ function Home() {
                                 <div className="service-item rounded pt-3" style={{ maxHeight: "370px" }}>
                                     <div className="p-4">
                                         <i className="fa fa-3x fa-headset text-primary mb-4"></i>
-                                        <h5>24/7 Service</h5>
-                                        <p>Day or night, wherever you are headed, we are here 24/7, guiding your journey with care and comfort. Your satisfaction and fulfillment is our priority</p>
+                                        <h5>{t('24/7Service')}</h5>
+                                        <p>{t('24/7ServiceDesc')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -108,21 +105,17 @@ function Home() {
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <h5 className="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
-                                <h1 className="mb-4">Welcome to <i className="fa fa-plane text-primary me-2"></i>Excellence Airport</h1>
-                                <p className="mb-4">Excellence Airport is a premium service provider with over two decades of expertise in the
-                                    hospitality and travel industry.</p>
-                                <p className="mb-4">Its reputation is built on offering seamless and luxurious airport
-                                    assistance services, including meet & greet, VIP terminal access, chauffeur-driven transfers,
-                                    and fast-track solutions. With a fleet of over 50 luxury vehicles, we enhance the travel
-                                    experience by combining efficiency, personalization, and unmatched comfort. </p>
+                                <h5 className="section-title ff-secondary text-start text-primary fw-normal">{t('AboutUs')}</h5>
+                                <h1 className="mb-4">{t('Welcometo')}<i className="fa fa-plane text-primary me-2"></i>Excellence Airport</h1>
+                                <p className="mb-4">{t('WelcomeDesc1')}</p>
+                                <p className="mb-4">{t('WelcomeDesc1')}</p>
                                 <div className="row g-4 mb-4">
                                     <div className="col-sm-6">
                                         <div className="d-flex align-items-center border-start border-5 border-primary px-3">
                                             <h1 className="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">+20</h1>
                                             <div className="ps-4">
-                                                <p className="mb-0">Years of</p>
-                                                <h6 className="text-uppercase mb-0">Experience</h6>
+                                                <p className="mb-0">{t('YearsOf')}</p>
+                                                <h6 className="text-uppercase mb-0">{t('Experience')}</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -130,13 +123,13 @@ function Home() {
                                         <div className="d-flex align-items-center border-start border-5 border-primary px-3">
                                             <h1 className="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
                                             <div className="ps-4">
-                                                <p className="mb-0">luxurious</p>
-                                                <h6 className="text-uppercase mb-0">Fleet Cars</h6>
+                                                <p className="mb-0">{t('luxurious')}</p>
+                                                <h6 className="text-uppercase mb-0">{t('FleetCars')}</h6>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <NavLink className="btn btn-primary py-3 px-5 mt-2" to="/companyhistory">Read More</NavLink>
+                                <NavLink className="btn btn-primary py-3 px-5 mt-2" to="/companyhistory">{t('ReadMore')}</NavLink>
 
                             </div>
                         </div>
@@ -146,8 +139,8 @@ function Home() {
                 <div className="container-xxl py-5">
                     <div className="container">
                         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <h5 className="section-title ff-secondary text-center text-primary fw-normal">Services</h5>
-                            <h1 className="mb-5">Our Services</h1>
+                            <h5 className="section-title ff-secondary text-center text-primary fw-normal">{t('Services')}</h5>
+                            <h1 className="mb-5">{t('OurServices')}</h1>
                         </div>
                         <div className="tab-className text-center wow fadeInUp" data-wow-delay="0.1s">
                             <ul className="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
@@ -155,7 +148,7 @@ function Home() {
                                     <a className="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
                                         <i className="fa fa-plane-arrival fa-2x text-primary"></i>
                                         <div className="ps-3">
-                                            <h6 className="mt-n1 mb-0">Arrival</h6>
+                                            <h6 className="mt-n1 mb-0">{t('Arrival')}</h6>
                                         </div>
                                     </a>
                                 </li>
@@ -163,7 +156,7 @@ function Home() {
                                     <a className="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
                                         <i className="fa fa-plane-departure fa-2x text-primary"></i>
                                         <div className="ps-3">
-                                            <h6 className="mt-n1 mb-0">Departure</h6>
+                                            <h6 className="mt-n1 mb-0">{t('Departure')}</h6>
                                         </div>
                                     </a>
                                 </li>
@@ -171,7 +164,7 @@ function Home() {
                                     <a className="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
                                         <i className="fa fa-forward fa-2x text-primary"></i>
                                         <div className="ps-3">
-                                            <h6 className="mt-n1 mb-0">Transition</h6>
+                                            <h6 className="mt-n1 mb-0">{t('Transition')}</h6>
                                         </div>
                                     </a>
                                 </li>
@@ -185,9 +178,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/meetairport.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Meeting</span>
+                                                        <span>{t('Meeting')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Agent meets passengers at the end airbridge with a personalized name board.</small>
+                                                    <small className="fst-italic">{t('MeetingDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -196,9 +189,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/fasttrack.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Fast track</span>
+                                                        <span>{t('FastTrack')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Passengers are escorted through immigration and customs using fast track lanes to minimize waiting times.</small>
+                                                    <small className="fst-italic">{t('FastTrackDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -207,9 +200,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/escortinside.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Escorting passengers inside the airport </span>
+                                                        <span>{t('EscortingPassengersInside')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Escorting passengers to their onward mode of transportation or the arivals hall.</small>
+                                                    <small className="fst-italic">{t('EscortingPassengersDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -218,9 +211,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/escortoutside.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Escorting passengers outside the airport</span>
+                                                        <span>{t('EscortingPassengersOutside')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Escorting passengers to their agreed transportation point.</small>
+                                                    <small className="fst-italic">{t('EscortingPassengersOutsideDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -230,9 +223,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/airportformalities.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Handling airport formalities</span>
+                                                        <span>{t('HandlingAirportFormalities')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">A dedicated agent handles all airport formalities, including immigration and customs.</small>
+                                                    <small className="fst-italic">{t('HandlingAirportFormalitiesDes')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -241,9 +234,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/lugguage.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Handling lugguage</span>
+                                                        <span>{t('HandlingLugguage')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Luggage is delivered directly to the VIP terminal.</small>
+                                                    <small className="fst-italic">{t('HandlingLugguageDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -253,9 +246,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/vipterminal.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Transport to VIP terminal</span>
+                                                        <span>{t('TransportToVIPTerminal')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Chauffeur-driven transport from the aircraft to the VIP terminal.</small>
+                                                    <small className="fst-italic">{t('TransportToVIPTerminalDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -269,9 +262,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/coordination.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Coordination</span>
+                                                        <span>{t('Coordination')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Coordination begins before passengers arrive at the airport, with agents arranging curb side meetups and pre-arranged porter services for luggage assistance.</small>
+                                                    <small className="fst-italic">{t('CoordinationDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -411,7 +404,7 @@ function Home() {
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
                                                         <span>Chauffeur transport</span>
                                                     </h5>
-                                                    <small className="fst-italic">Chauffeur transport back to the aircraft for the next leg of the journey.                                                    </small>
+                                                    <small className="fst-italic">Chauffeur transport back to the aircraft for the next leg of the journey.</small>
                                                 </div>
                                             </div>
                                         </div>
