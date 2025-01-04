@@ -273,9 +273,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/personalized.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Personalized Coordination</span>
+                                                        <span>{t('PersonalizedCoordination')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Personalized coordination of drop-off time and location with the assigned agent before arrival. </small>
+                                                    <small className="fst-italic">{t('PersonalizedCoordinationDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -284,9 +284,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/fasttracklanes.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Fast Track Lanes</span>
+                                                        <span>{t('FastTrackLanes')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Fast-track lanes are used for check-in, security, and passport control, ensuring  efficiency.</small>
+                                                    <small className="fst-italic">{t('FastTrackLanesDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -295,9 +295,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/escortdeparture.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Escorting passengers</span>
+                                                        <span>{t('EscortingPassengers')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">If arranged, passengers are escorted to the departure lounge and then directly to the boarding gate.</small>
+                                                    <small className="fst-italic">{t('EscortingPassengersDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -307,9 +307,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/combination.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Combination</span>
+                                                        <span>{t('Combination')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Curb side meet-and-greet, luggage assistance, and expedited check-in.</small>
+                                                    <small className="fst-italic">{t('CombinationDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -318,9 +318,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/security.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Security</span>
+                                                        <span>{t('Security')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Security and passport control are handled within the VIP terminal.</small>
+                                                    <small className="fst-italic">{t('SecurityDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -329,9 +329,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/chauffeurdeparture.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Chauffeur Service</span>
+                                                        <span>{t('ChauffeurService')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Chauffeur service to the aircraft if it is on a remote stand.</small>
+                                                    <small className="fst-italic">{t('ChauffeurServiceDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -345,9 +345,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/meetairport.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Meet</span>
+                                                        <span>{t('Meett')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Agents meet passengers with a name board at the airbridge or terminal.</small>
+                                                    <small className="fst-italic">{t('MeettDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>

@@ -62,11 +62,7 @@ function Terms() {
                     interest will be applied at a rate of 1% per month, and additional penalties may be imposed as stipulated in our policies. 
                     These measures ensure fairness and accountability on both sides.
                 </p>
-                <p className="mb-4" style={{ textAlign: 'justify' }}>
-                    <strong>Ownership and Responsibility:</strong> Excellence Airport retains ownership of all goods and services until 
-                    full payment is received. However, responsibility for the use and care of delivered items lies with the client upon delivery. 
-                    In cases of non-payment, goods must be returned immediately at the client’s expense, as outlined in our terms.
-                </p>
+                
                 <p className="mb-4" style={{ textAlign: 'justify' }}>
                     <strong>Legal Framework:</strong> Our operations are governed by French law, ensuring a robust and transparent 
                     framework for all transactions. Any disputes will fall under the exclusive jurisdiction of the Pontoise Commercial Courts, 

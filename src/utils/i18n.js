@@ -23,7 +23,7 @@ const resources = {
       "AboutUs": "About Us",
       "CompanyHistory&Team": "Company History & Team",
       "Values&MissionStatements": "Values & mission statements",
-      "Terms& Policies": "Terms & policies",
+      "Terms&Policies": "Terms & policies",
       "ContactUs": "Contact Us",
       "ContactForm": "Contact Form",
       "SupportContactDetails" :"Support Contact Details",
@@ -163,11 +163,9 @@ const resources = {
       "Commitment": "Our Commitment to Transparency and Trust",
       "CommitmentDes": "At Excellence Airport, we prioritize clarity, fairness, and mutual respect in our interactions with clients. Our terms and policies are designed to ensure a seamless and trustworthy experience, reflecting our unwavering  commitment to professionalism and customer satisfaction.",
       "ReservationAndPaymentTerms": "Reservation and Payment Terms",
-      "ReservationAndPaymentTermsDesc":"To provide the highest quality of service, all bookings require a signed purchase order and a 50% deposit upfront. Payments are to be made promptly, in line with the agreed terms, ensuring smooth and uninterrupted service delivery. Invoices are payable at our headquarters: 9 Rue Jean-Jacques Rousseau, 95350 Saint-Brice-sous-Forêt.",
+      "ReservationAndPaymentTermsDesc":"To provide the highest quality of service, all bookings require a signed purchase order and a 50% deposit upfront. Payments are to be made promptly, in line with the agreed terms, ensuring smooth and uninterrupted service delivery. Invoices are payable at our headquarters: 9 Street Jean-Jacques Rousseau, 95350 Saint-Brice-sous-Forêt.",
       "DisputeResolutionandLatePayments": "Dispute Resolution and Late Payments",
       "DisputeResolutionandLatePaymentsDesc":"We understand that issues may occasionally arise. Any claims regarding services must be submitted in writing within eight days of receiving an invoice. For late payments, interest will be applied at a rate of 1% per month, and additional penalties may be imposed as stipulated in our policies. These measures ensure fairness and accountability on both sides.",
-      "OwnershipandResponsibility": "Ownership and Responsibility",
-      "OwnershipandResponsibilityDesc": "Excellence Airport retains ownership of all goods and services until full payment is received. However, responsibility for the use and care of delivered items lies with the client upon delivery. In cases of non-payment, goods must be returned immediately at the client's expense, as outlined in our terms.",
       "LegalFramework": "Legal Framework",
       "LegalFrameworkDesc": "Our operations are governed by French law, ensuring a robust and transparent framework for all transactions. Any disputes will fall under the exclusive jurisdiction of the Pontoise Commercial Courts, providing a clear pathway for resolution.",
       "CommitmentDes2": "Excellence Airport stands by its commitment to delivering exceptional service while adhering to ethical and legal standards. These terms and policies are not just guidelines; they embody our dedication to integrity and trust in every aspect of our operations.",
@@ -192,33 +190,39 @@ const resources = {
       "ValuesConclusion": "These values define who we are and guide every decision we make. Excellence Airport is not just a service provider; we are your trusted partner in ensuring that your journey is as remarkable as your destination.",
       "Motto": "Let us manage the details while you enjoy the journey",
 
-
-
-
-
-
       
 
       ////Contact us //// Contact Form
 
 
-      
+      "ContactQuery": "Contact For Any Query",
+      "General": "General",
+      "Technical": "Technical",
+      "SendMessage": "Send Message",
 
 
 
+      //////// Support Contact
 
-
-
-      
-
-
-
-      
-
-
-
-
-
+      "ContactInformation": "Contact Information",
+      "Reach": "Reach Out to Us",
+      "ReachDesc": "At Excellence Airport, we believe in fostering open and effective communication with our valued clients and partners. Whether you have inquiries, require assistance, or wish to collaborate, our team is always accessible to provide support and ensure your experience with us is seamless.",
+      "DirectorOfPublication": "Director of Publication",
+      "DirectorOfPublicationDesc": "The operations and content of Excellence Airport are overseen by our esteemed Director of Publication, Benjamin Slama, who ensures that our communications maintain the highest standards of clarity and professionalism.",
+      "EmailDesc1": "For general inquiries, feedback, or detailed information about our services, feel free to contact us at",
+      "EmailDesc2": "Our dedicated team responds promptly to address your needs.",
+      "Phone": "Phone",
+      "PhoneDesc1": "Need immediate assistance or wish to discuss a service in detail? Reach us directly at",
+      "PhoneDesc2": "Our representatives are ready to assist you with any query.",
+      "PhysicalAddress": "Physical Address",
+      "PhysicalAddressDesc1": "Visit or correspond with us at our headquarters",
+      "PhysicalAddressDesc2": "we coordinate our premium services for clients worldwide.",
+      "RCSRegistration": "RCS Registration",
+      "RCSRegistrationDesc1": "As a registered company, Excellence Airport adheres to all applicable legal and regulatory requirements. Our registration number is",
+      "RCSRegistrationDesc2": "underscoring our commitment to transparency and trustworthiness.",
+      "HostingProvider": "HostingProvider",
+      "HostingProviderDesc1": "Excellence Airport's website and online services are hosted by",
+      "HostingProviderDesc2": "a reliable hosting provider ensuring robust performance, security, and accessibility for our digital platforms.",
 
 
 
@@ -278,14 +282,14 @@ const resources = {
       "TravelingMessage": "Voyager, c'est passer du temps magnifique et se concentrer uniquement sur les choses importantes. Laissez-nous nous occuper des détails pendant que vous profitez du voyage.",    
       "MeetDesc": "Le service d'accueil à Excellence airport assure que chaque voyageur qui essai l'expérience de la simplicité, du comfort et du luxe lors de sa traversée de l'aéroport",
       "ProfesionalDrivers": "Chauffeurs professionnels",
-      "DriversDesc": "Excellence Airport Driven Transfers combine confort, professionnalisme et style pour répondre aux besoins des clients , que ce soit pour les affaires ou les loisirs.",  
+      "DriversDesc": "Excellence Airport Driven Transfers combine comfort, professionnalisme et style pour répondre aux besoins des clients , que ce soit pour les affaires ou les loisirs.",  
       "VIPDesc": "Le service VIP Terminal fournit aux voyageurs un accès exclusif aux terminaux privés où toutes les procédures de l'aéroport sont traitées en leur nom.",
       "24/7Service": "Service 24/7",
-      "24/7ServiceDesc": "Jour ou nuit, où que vous soyez allé, nous sommes là 24h/24, guidant votre voyage avec soin et confort. Votre satisfaction est notre priorité",
+      "24/7ServiceDesc": "Jour ou nuit, où que vous soyez allé, nous sommes là 24h/24, guidant votre voyage avec soin et comfort. Votre satisfaction est notre priorité",
       "AboutUs": "A propos",
       "Welcometo": "Bienvenue à",
       "WelcomeDesc1": "Excellence Airport est un services de premier plan avec plus de deux décennies d'expertise dans l'industrie du voyage.",
-      "WelcomeDesc2": "Sa réputation est fondée sur l'offre de services d'assistance aéroportuaire de première classe, y compris les services d'accueil et de départ, l'accès au terminal VIP, les transferts avec chauffeur et les solutions de fast track. Avec une flotte de plus de 50 véhicules de luxe, nous améliorons l'expérience de voyage en combinant l'efficacité, la personnalisation et le confort.",
+      "WelcomeDesc2": "Sa réputation est fondée sur l'offre de services d'assistance aéroportuaire de première classe, y compris les services d'accueil et de départ, l'accès au terminal VIP, les transferts avec chauffeur et les solutions de fast track. Avec une flotte de plus de 50 véhicules de luxe, nous améliorons l'expérience de voyage en combinant l'efficacité, la personnalisation et le comfort.",
       "YearsOf": "Années de",
       "Experience": "Expérience",
       "luxurious": "luxueux",  
@@ -369,6 +373,82 @@ const resources = {
       "AddressDesc": "9 rue Jean-Jacques Rousseau, 95350 Saint-Brice-sous-Forêt, France",
       "AboutDesc3": "Chez Excellence Airport, nous sommes déterminés à redéfinir les voyages en aéroport en combinant innovation, luxe et service personnalisé. Rejoignez les innombrables clients du monde entier qui nous font confiance pour leur offrir une expérience aéroportuaire inégalée.",
       "OurProfessionalDrivers": "Nos chauffeurs professionnels",
+
+
+      ////About ///Team
+
+      "OurTeam": "Notre équipe",
+      "Team": "Equipe",
+      "TeamMembers": "Membres d'équipe",
+      "OurLovelyTeam": "Notre formidable équipe",
+
+      ///// About ///Terms
+
+      "Commitment": "Notre engagement en termes de transparence et de confiance",
+      "CommitmentDes": "Chez Excellence Airport, nous privilégions la transparence, la sincérité et le respect mutuel dans nos relations avec nos clients. Nos conditions et politiques sont conçues pour assurer une expérience fluide et fiable, reflétant notre engagement indéfectible à la fois pour le professionnalisme et la satisfaction de nos clients.",
+      "ReservationAndPaymentTerms": "Conditions de réservation et de paiement",
+      "ReservationAndPaymentTermsDesc":"Afin de fournir un service de qualité, toutes les réservations doivent faire l'objet d'un bon de commande signé et d'un acompte de 50 %. Les paiements doivent être effectués sans délai, conformément aux conditions convenues, afin d'assurer une prestation de services souple et ininterrompue. Les factures sont payables à notre siège social : 9 Rue Jean-Jacques Rousseau, 95350 Saint-Brice-sous-Forêt.",
+      "DisputeResolutionandLatePayments": "Résolution des conflits et retards de paiement",
+      "DisputeResolutionandLatePaymentsDesc":"Nous comprenons que des problèmes peuvent parfois survenir. Toute réclamation concernant les services doit être soumise par écrit dans les huit jours suivant la réception de la facture. En cas de retard de paiement, des intérêts seront appliqués à raison de 1 % par mois, et des pénalités supplémentaires pourront être imposées conformément à nos politiques. Ces mesures garantissent l'équité et la responsabilité des deux parties.",
+      "LegalFramework": "Le cadre juridique",
+      "LegalFrameworkDesc": "Nos activités sont régies par le droit français, ce qui garantit un cadre solide et transparent pour toutes les transactions. Tout litige est soumis à la juridiction exclusive des tribunaux de commerce de Pontoise, ce qui offre une voie de résolution claire.",
+      "CommitmentDes2": "Excellence Airport s'engage à fournir un service exceptionnel tout en respectant les normes éthiques et légales. Ces conditions et politiques ne sont pas de simples lignes directrices ; elles représentent notre dévouement à l'intégrité et à la confiance dans tous les aspects de nos opérations.",
+      
+
+       //// About ////Values
+
+       "OurGuidingPrinciples": "Nos principes fondamentaux",
+       "OurGuidingPrinciplesDesc":" Chez Excellence Airport, nous considérons que tout voyage commence par une expérience exceptionnelle. Notre mission est de redéfinir les voyages en aéroport en offrant des services haut de gamme, personnalisés et transparents qui garantissent le comfort, l'efficacité et le luxe pour chaque voyageur. Dès votre arrivée, notre équipe se consacre à simplifier les complexités du voyage aérien moderne, en offrant des solutions innovantes qui combinent le professionnalisme et l'attention sincère.",
+       "OurValues":"Nos valeurs sont la pierre fondatrice de notre engagement en faveur de l'excellence.",
+       "CustomerCentric": "Approche axée sur le client",
+       "CustomerCentricDesc": "Nous adaptons nos services aux besoins uniques de chaque voyageur, que ce soit pour les affaires ou les loisirs, afin de garantir une expérience personnalisée et mémorable.",
+       "ExcellenceInService": "L'excellence dans le service",
+       "ExcellenceInServiceDesc":"Notre professionnalisme et notre attention aux détails garantissent des expériences de premier ordre, sans compromis.",
+       "GlobalAccessibility": "Accessibilité globale",
+       "GlobalAccessibilityDesc": "Avec une assistance multilingue en français, anglais et espagnol, nous favorisons l'inclusion et assurons une communication fluide pour notre clientèle diversifiée.",
+       "CommitmenToPrivacy": "Engagement en faveur de la confidentialité et de l'efficacité",
+       "CommitmenToPrivacyDesc": "Conçus pour ceux qui privilégient la confidentialité et le temps, nos services VIP, y compris l'accès privé aux terminaux et les transferts avec chauffeur, offrent une commodité inégalée.",
+       "SustainabilityAndResponsibility": "Durabilité et responsabilité",
+       "SustainabilityAndResponsibilityDesc": "Nous adhérons à des pratiques éthiques et donnons la priorité à la sécurité et au bien-être de nos clients et de notre équipe, tout en nous efforçant d'assurer la durabilité à long terme.",
+       "ValuesConclusion": "Ces valeurs nous définissent et guident chacune de nos décisions. Excellence Airport n'est pas un simple prestataire de services ; nous sommes votre partenaire de confiance pour que votre voyage soit aussi remarquable que votre destination.",
+       "Motto": "Laissez-nous gérer les détails pendant que vous profitez du voyage",
+
+
+        ////Contact us //// Contact Form
+
+
+      "ContactQuery": "Contact pour toute question",
+      "General": "Général",
+      "Technical": "Technique",
+      "SendMessage": "Envoyer un message",
+
+
+
+      //////// Support Contact
+
+      "ContactInformation": "Informations sur le contact",
+      "Reach": "Nous contacter",
+      "ReachDesc": "Chez Excellence Airport, nous croyons en une communication ouverte et efficace avec nos clients et partenaires. Que ce soit pour une demande de renseignements, d'assistance ou de collaboration, notre équipe est toujours disponible pour vous apporter son soutien et faire en sorte que votre expérience avec nous soit sans faille.",
+      "DirectorOfPublication": "Directeur de la publication",
+      "DirectorOfPublicationDesc": "Les opérations et le contenu d'Excellence Airport sont supervisés par notre estimé directeur de publication, Benjamin Slama, qui veille à ce que nos communications respectent les normes les plus strictes en matière de clarté et de professionnalisme.",
+      "EmailDesc1": "Pour des questions d'ordre général, des commentaires ou des informations détaillées sur nos services, n'hésitez pas à nous contacter à l'adresse suivante",
+      "EmailDesc2": "Notre équipe dévouée répond rapidement à vos besoins.",
+      "Phone": "Téléphone",
+      "PhoneDesc1": "Vous avez besoin d'une assistance immédiate ou souhaitez discuter d'un service en détail ? Contactez-nous directement à l'adresse suivante",
+      "PhoneDesc2": "Nos représentants sont prêts à vous assister pour toutes vos questions.",
+      "PhysicalAddress": "Adresse physique",
+      "PhysicalAddressDesc1": "Nous rendre visite ou échanger avec nous au siège de l'entreprise",
+      "PhysicalAddressDesc2": "Nous coordonnons nos services haut de gamme pour des clients du monde entier.",
+      "RCSRegistration": "Inscription au RCS",
+      "RCSRegistrationDesc1": "En tant qu'entreprise enregistrée, Excellence Airport se conforme à toutes les exigences légales et réglementaires applicables. Notre numéro d'enregistrement est le suivant",
+      "RCSRegistrationDesc2": "soulignant notre engagement en matière de transparence et de fiabilité.",
+      "HostingProvider": "Fournisseur d'hébergement",
+      "HostingProviderDesc1": "Le site web et les services en ligne de l'aéroport d'Excellence sont hébergés par",
+      "HostingProviderDesc2": "un fournisseur d'hébergement fiable garantissant des performances, une sécurité et une accessibilité solides pour nos plateformes numériques.",
+
+
+ 
+ 
 
 
 

@@ -73,7 +73,7 @@ function Support() {
                                 </p>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
                                     <strong>Physical Address:</strong> Visit or correspond with us at our headquarters:
-                                    <em>9 Rue Jean-Jacques Rousseau, 95350 Saint-Brice-sous-Forêt, France</em>. This is the hub of our operations, where
+                                    <em>9 Street Jean-Jacques Rousseau, 95350 Saint-Brice-sous-Forêt, France</em>. This is the hub of our operations, where
                                     we coordinate our premium services for clients worldwide.
                                 </p>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>

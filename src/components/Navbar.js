@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+    const { t } = useTranslation();
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
             <NavLink to="/" className="navbar-brand p-0">
@@ -25,7 +27,7 @@ const Navbar = () => {
                             `nav-item nav-link ${isActive ? 'active' : ''}`
                         }
                     >
-                        Home
+                       {t('Home')}
                     </NavLink>
 
                     <div className="nav-item dropdown">
@@ -34,7 +36,7 @@ const Navbar = () => {
                             className="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
                         >
-                            Services
+                            {t('Services')}
                         </a>
 
                         <div className="dropdown-menu m-0">
@@ -42,19 +44,19 @@ const Navbar = () => {
                                 to="/meetgreet"
                                 className="dropdown-item"
                             >
-                                Meet & Greet
+                                {t('Meet&Greet')}
                             </NavLink>
                             <NavLink
                                 to="/vip"
                                 className="dropdown-item"
                             >
-                                VIP Terminal
+                                {t('VIPTerminal')}
                             </NavLink>
                             <NavLink
                                 to="/chauffeur"
                                 className="dropdown-item"
                             >
-                                Chauffeur-driven Transfers
+                                {t('ChauffeurDrivenTransfers')}
                             </NavLink>
 
 
@@ -67,7 +69,7 @@ const Navbar = () => {
                             className="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
                         >
-                            Fleet Cars
+                            {t('FleetCars')}
                         </a>
 
                         <div className="dropdown-menu m-0">
@@ -75,13 +77,13 @@ const Navbar = () => {
                                 to="/availablecars"
                                 className="dropdown-item"
                             >
-                                Available vehicles
+                                {t('AvailableVehicles')}
                             </NavLink>
                             <NavLink
                                 to="/carmodels"
                                 className="dropdown-item"
                             >
-                                Car Models
+                                {t('CarModels')}
                             </NavLink>
 
                         </div>
@@ -93,7 +95,7 @@ const Navbar = () => {
                             className="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
                         >
-                            About Us
+                            {t('AboutUs')}
                         </a>
                         <div className="dropdown-menu m-0">
 
@@ -101,13 +103,13 @@ const Navbar = () => {
                                 to="/companyhistory"
                                 className="dropdown-item"
                             >
-                                Company History & Team
+                                {t('CompanyHistory&Team')}
                             </NavLink>
                             <NavLink
                                 to="/values"
                                 className="dropdown-item"
                             >
-                               Values & mission statements
+                               {t('Values&MissionStatements')}
                             </NavLink>
                            
                             
@@ -115,7 +117,7 @@ const Navbar = () => {
                                 to="/terms"
                                 className="dropdown-item"
                             >
-                               Terms & policies
+                               {t('Terms&Policies')}
                             </NavLink>
                         </div>
                     </div>
@@ -126,7 +128,7 @@ const Navbar = () => {
                             className="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
                         >
-                            Contact Us
+                            {t('ContactUs')}
                         </a>
 
                         <div className="dropdown-menu m-0">
@@ -134,13 +136,13 @@ const Navbar = () => {
                                 to="/contactform"
                                 className="dropdown-item"
                             >
-                                Contact Form
+                                {t('ContactForm')}
                             </NavLink>
                             <NavLink
                                 to="/support"
                                 className="dropdown-item"
                             >
-                                Support Contact Details
+                                {t('SupportContactDetails')}
                             </NavLink>
 
                         </div>
@@ -152,7 +154,7 @@ const Navbar = () => {
                             className="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
                         >
-                            User Account
+                            {t('UserAccount')}
                         </a>
 
                         <div className="dropdown-menu m-0">
@@ -166,13 +168,13 @@ const Navbar = () => {
                                 to="/bookinghistory"
                                 className="dropdown-item"
                             >
-                                Booking History
+                                {t('BookingHistory')}
                             </NavLink>
                             <NavLink
                                 to="/payment"
                                 className="dropdown-item"
                             >
-                                Payment Methods
+                                {t('PaymentMethods')}
                             </NavLink>
 
                         </div>
@@ -180,7 +182,7 @@ const Navbar = () => {
                    
                 </div>
                 <a href="#" className="btn btn-primary py-2 px-4">
-                    Book A Service
+                    {t('BookAService')}
                 </a>
             </div>
         </nav>
