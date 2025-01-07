@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.custom-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+  z-index: 10;
+  min-width: 110px;
+  text-align: left;
+}
+
+@media (min-width: 992px) {
+  .custom-dropdown {
+    min-width: 100px; /* Wider dropdown for larger screens */
+  }
+}

@@ -164,7 +164,7 @@ function Home() {
                                     <a className="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
                                         <i className="fa fa-forward fa-2x text-primary"></i>
                                         <div className="ps-3">
-                                            <h6 className="mt-n1 mb-0">{t('Transition')}</h6>
+                                            <h6 className="mt-n1 mb-0">{t('Transit')}</h6>
                                         </div>
                                     </a>
                                 </li>
@@ -225,7 +225,7 @@ function Home() {
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
                                                         <span>{t('HandlingAirportFormalities')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">{t('HandlingAirportFormalitiesDes')}</small>
+                                                    <small className="fst-italic">{t('HandlingAirportFormalitiesDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -356,9 +356,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/airport2.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Assist</span>
+                                                        <span>{t('Assist')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Assistance is offered for baggage claim, if necessary, and porter services, if pre-booked.</small>
+                                                    <small className="fst-italic">{t('AssistDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -367,9 +367,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/fasttrack.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Fast Track</span>
+                                                        <span>{t('FastTrackk')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Fast-track access is utilized for security and immigration formalities, ensuring a smooth transition.
+                                                    <small className="fst-italic">{t('FastTrackkDesc')}
                                                     </small>
                                                 </div>
                                             </div>
@@ -379,9 +379,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/escortinside.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Departure to boarding gate</span>
+                                                        <span>{t('DepartureToBoardingGate')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Passengers are guided to the departure lounge, if reserved, or boarding gate.</small>
+                                                    <small className="fst-italic">{t('DepartureToBoardingGateDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -390,9 +390,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/chauffeurdeparture.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Chauffeur service</span>
+                                                        <span>{t('ChauffeurrService')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Chauffeur service from the aircraft to the VIP terminal for a relaxing layover.</small>
+                                                    <small className="fst-italic">{t('ChauffeurrServiceDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -402,9 +402,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/escortoutside.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Chauffeur transport</span>
+                                                        <span>{t('ChauffeurTransport')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Chauffeur transport back to the aircraft for the next leg of the journey.</small>
+                                                    <small className="fst-italic">{t('ChauffeurTransportDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -414,9 +414,9 @@ function Home() {
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/lugguage.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
                                                     <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>Assistance with luggage</span>
+                                                        <span>{t('AssistanceWithLuggage')}</span>
                                                     </h5>
-                                                    <small className="fst-italic">Assistance with luggage and airport formalities.</small>
+                                                    <small className="fst-italic">{t('AssistanceWithLuggageDesc')}</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -436,46 +436,46 @@ function Home() {
                         </div>
                         <div className="col-md-6 bg-dark d-flex align-items-center">
                             <div className="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                                <h5 className="section-title ff-secondary text-start text-primary fw-normal">Booking</h5>
-                                <h1 className="text-white mb-4">Book A Service Online</h1>
+                                <h5 className="section-title ff-secondary text-start text-primary fw-normal">{t('Booking')}</h5>
+                                <h1 className="text-white mb-4">{t('BookAServiceOnline')}</h1>
                                 <form>
                                     <div className="row g-3">
                                         <div className="col-md-6">
                                             <div className="form-floating">
                                                 <input type="text" className="form-control" id="name" placeholder="Your Name" />
-                                                <label for="name">Your Name</label>
+                                                <label for="name">{t('YourName')}</label>
                                             </div>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-floating">
                                                 <input type="email" className="form-control" id="email" placeholder="Your Email" />
-                                                <label for="email">Your Email</label>
+                                                <label for="email">{t('YourEmail')}</label>
                                             </div>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-floating date" id="date3" data-target-input="nearest">
                                                 <input type="text" className="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                                <label for="datetime">Date & Time</label>
+                                                <label for="datetime">{t('Date & Time')}</label>
                                             </div>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-floating">
                                                 <select className="form-select" id="select1">
-                                                    <option value="1">People 1</option>
-                                                    <option value="2">People 2</option>
-                                                    <option value="3">People 3</option>
+                                                    <option value="1">{t('People1')}</option>
+                                                    <option value="2">{t('People2')}</option>
+                                                    <option value="3">{t('People3')}</option>
                                                 </select>
-                                                <label for="select1">No Of People</label>
+                                                <label for="select1">{t('NoOfPeople')}</label>
                                             </div>
                                         </div>
                                         <div className="col-12">
                                             <div className="form-floating">
                                                 <textarea className="form-control" placeholder="Special Request" id="message" ></textarea>
-                                                <label for="message">Special Request</label>
+                                                <label for="message">{t('SpecialRequest')}</label>
                                             </div>
                                         </div>
                                         <div className="col-12">
-                                            <button className="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                            <button className="btn btn-primary w-100 py-3" type="submit">{t('BookNow')}</button>
                                         </div>
                                     </div>
                                 </form>
@@ -505,8 +505,8 @@ function Home() {
                 <div className="container-xxl pt-5 pb-3">
                     <div className="container">
                         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <h5 className="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
-                            <h1 className="mb-5">Our Drivers</h1>
+                            <h5 className="section-title ff-sescondary text-center text-primary fw-normal">{t('TeamMembers')}</h5>
+                            <h1 className="mb-5">{t('OurDrivers')}</h1>
                         </div>
                         <div className="row g-4">
                             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">

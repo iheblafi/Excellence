@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import { useTranslation } from 'react-i18next';
 
 function MeetGreet() {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="container-xxl bg-white p-0">
@@ -19,12 +21,12 @@ function MeetGreet() {
 
           <div class="container-xxl py-5 bg-dark hero-header mb-5">
             <div class="container text-center my-5 pt-5 pb-4">
-              <h1 class="display-3 text-white mb-3 animated slideInDown">Meet & Greet</h1>
+              <h1 class="display-3 text-white mb-3 animated slideInDown">{t('Meet&Greet')}</h1>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center text-uppercase">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">{t('Home')}</a></li>
                   <li class="breadcrumb-item"><a href="#">Services</a></li>
-                  <li class="breadcrumb-item text-white active" aria-current="page">Meet & Greet</li>
+                  <li class="breadcrumb-item text-white active" aria-current="page">{t('Meet&Greet')}</li>
                 </ol>
               </nav>
             </div>
@@ -51,17 +53,9 @@ function MeetGreet() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <h5 className="section-title ff-secondary text-start text-primary fw-normal">Meet & Greet</h5>
-                <h1 className="mb-4">Airport Meet & Greet</h1>
-                <p className="mb-4" style={{ textAlign: 'justify' }}>Imagine stepping into the bustling world of an international airport, where the hum of activity can feel overwhelming. But instead of being swept into the chaos, you're greeted with a warm smile and the promise of effortless travel. This is the essence of the Excellence Airport Meet & Greet service a sanctuary of ease, comfort, and luxury amidst the complexities of modern air travel.
-
-                  From the moment you arrive, a dedicated representative becomes your guide, expertly navigating the labyrinth of the airport. Whether it is your first flight or your hundredth, their knowledge and care make every step feel effortless. Long lines become a distant memory as you glide through fast-track processing, bypassing the usual delays with grace.
-
-                  As you move through the airport, the service transforms each transition into a moment of calm. Check-in is no longer a chore, security checks feel less daunting, and even the busiest terminals seem to slow down just for you. For those in transit, the service ensures that tight connections are met with precision and ease, turning what could be a stressful layover into an opportunity to relax.
-
-                  The journey doesnt end at the gate. Whether you're departing, arriving, or simply passing through, the Meet & Greet service is tailored to your every need, ensuring that no detail is overlooked. It is not just about getting to your destination, it is about how you feel along the way: relaxed, cared for, and completely at ease.
-
-                  With Excellence Airport Meet & Greet, air travel transforms from a logistical challenge into a luxurious experience, where every moment is designed to leave you feeling like a priority. It is not just a service; it is a story of effortless journeys and unforgettable care. </p>
+                <h5 className="section-title ff-secondary text-start text-primary fw-normal">{t('Meet&Greet')}</h5>
+                <h1 className="mb-4">{t('AirportMeet&Greet')}</h1>
+                <p className="mb-4" style={{ textAlign: 'justify' }}> {t('AirportMeet&GreetDesc')} </p>
 
               </div>
             </div>
@@ -72,8 +66,8 @@ function MeetGreet() {
         <div className="container-xxl py-5">
           <div className="container">
             <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-              <h5 className="section-title ff-secondary text-center text-primary fw-normal">Meet & Greet</h5>
-              <h1 className="mb-5">Explore Our Meet & Greet Services</h1>
+              <h5 className="section-title ff-secondary text-center text-primary fw-normal">{t('Meet&Greet')}</h5>
+              <h1 className="mb-5">{t('ExploreOurMeet&GreetServices')}</h1>
             </div>
             <div className="tab-className text-center wow fadeInUp" data-wow-delay="0.1s">
               <ul className="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
@@ -81,7 +75,7 @@ function MeetGreet() {
                   <a className="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
                     <i className="fa fa-plane-arrival fa-2x text-primary"></i>
                     <div className="ps-3">
-                      <h6 className="mt-n1 mb-0">Arrival</h6>
+                      <h6 className="mt-n1 mb-0">{t('Arrival')}</h6>
                     </div>
                   </a>
                 </li>
@@ -89,7 +83,7 @@ function MeetGreet() {
                   <a className="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
                     <i className="fa fa-plane-departure fa-2x text-primary"></i>
                     <div className="ps-3">
-                      <h6 className="mt-n1 mb-0">Departure</h6>
+                      <h6 className="mt-n1 mb-0">{t('Departure')}</h6>
                     </div>
                   </a>
                 </li>
@@ -97,7 +91,7 @@ function MeetGreet() {
                   <a className="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
                     <i className="fa fa-forward fa-2x text-primary"></i>
                     <div className="ps-3">
-                      <h6 className="mt-n1 mb-0">Transition</h6>
+                      <h6 className="mt-n1 mb-0">{t('Transit')}</h6>
                     </div>
                   </a>
                 </li>
@@ -111,9 +105,9 @@ function MeetGreet() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/meetairport.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Meeting</span>
+                            <span>{t('Meeting')}</span>
                           </h5>
-                          <small className="fst-italic">Agent meets passengers at the end airbridge with a personalized name board.</small>
+                          <small className="fst-italic">{t('MeetingDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -122,9 +116,9 @@ function MeetGreet() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/fasttrack.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Fast track</span>
+                            <span>{t('FastTrack')}</span>
                           </h5>
-                          <small className="fst-italic">Passengers are escorted through immigration and customs using fast track lanes to minimize waiting times.                                                    </small>
+                          <small className="fst-italic">{t('FastTrackDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -133,9 +127,9 @@ function MeetGreet() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/escortinside.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Escorting passengers inside the airport </span>
+                            <span>{t('EscortingPassengersInside')}</span>
                           </h5>
-                          <small className="fst-italic">Escorting passengers to their onward mode of transportation or the arivals hall.</small>
+                          <small className="fst-italic">{t('EscortingPassengersDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -155,9 +149,9 @@ function MeetGreet() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/coordination.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Coordination</span>
+                            <span>{t('Coordination')}</span>
                           </h5>
-                          <small className="fst-italic">Coordination begins before passengers arrive at the airport, with agents arranging curb side meetups and pre-arranged porter services for luggage assistance.</small>
+                          <small className="fst-italic">{t('CoordinationDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -167,9 +161,9 @@ function MeetGreet() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/fasttracklanes.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Fast Track Lanes</span>
+                            <span>{t('FastTrackLanes')}</span>
                           </h5>
-                          <small className="fst-italic">Fast-track lanes are used for check-in, security, and passport control, ensuring  efficiency.</small>
+                          <small className="fst-italic">{t('FastTrackLanesDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -178,9 +172,9 @@ function MeetGreet() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/boardinggate.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Boarding gate</span>
+                            <span>{t('BoardingGate')}</span>
                           </h5>
-                          <small className="fst-italic">Passengers are escorted to the departure lounge, if arranged, and then directly to the boarding gate.</small>
+                          <small className="fst-italic">{t('BoardingGateDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -195,9 +189,9 @@ function MeetGreet() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/meetairport.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Meet</span>
+                            <span>{t('Meet')}</span>
                           </h5>
-                          <small className="fst-italic">Agents meet passengers with a name board at the airbridge or terminal.</small>
+                          <small className="fst-italic">{t('MeettDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -206,9 +200,9 @@ function MeetGreet() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/airport2.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Assist</span>
+                            <span>{t('Assist')}</span>
                           </h5>
-                          <small className="fst-italic">Assistance is offered for baggage claim, if necessary, and porter services, if pre-booked.</small>
+                          <small className="fst-italic">{t('AssistDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -217,9 +211,9 @@ function MeetGreet() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/fasttrack.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Fast Track</span>
+                            <span>{t('FastTrackk')}</span>
                           </h5>
-                          <small className="fst-italic">Fast-track access is utilized for security and immigration formalities, ensuring a smooth transition.
+                          <small className="fst-italic">{t('FastTrackkDesc')}
                           </small>
                         </div>
                       </div>
@@ -230,9 +224,9 @@ function MeetGreet() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/boardinggate.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Boarding gate</span>
+                            <span>{t('BoardingGate')}</span>
                           </h5>
-                          <small className="fst-italic">Passengers are escorted to the departure lounge, if arranged, and then directly to the boarding gate.</small>
+                          <small className="fst-italic">{t('BoardingGateDesc')}</small>
                         </div>
                       </div>
                     </div>

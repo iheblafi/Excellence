@@ -1,14 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
+import Languages from '../utils/Languages';
 
 const Navbar = () => {
     const { t } = useTranslation();
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-            <NavLink to="/" className="navbar-brand p-0">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-4 py-3 py-lg-0">
+            <NavLink to="/" className="navbar-brand p-2">
                 <h1 className="text-primary m-0">
-                    <i className="fa fa-plane me-3"></i>Excellence Airport
+                    <i className="fa fa-plane me-1"></i>Excellence Airport
                 </h1>
             </NavLink>
             <button
@@ -58,12 +59,10 @@ const Navbar = () => {
                             >
                                 {t('ChauffeurDrivenTransfers')}
                             </NavLink>
-
-
                         </div>
                     </div>
 
-                    <div className="nav-item dropdown">
+                    {/* <div className="nav-item dropdown">
                         <a
                             href="#"
                             className="nav-link dropdown-toggle"
@@ -87,7 +86,7 @@ const Navbar = () => {
                             </NavLink>
 
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="nav-item dropdown">
                         <a
@@ -103,7 +102,7 @@ const Navbar = () => {
                                 to="/companyhistory"
                                 className="dropdown-item"
                             >
-                                {t('CompanyHistory&Team')}
+                                {t('CompanyHistory')}
                             </NavLink>
                             <NavLink
                                 to="/values"
@@ -184,6 +183,11 @@ const Navbar = () => {
                 <a href="#" className="btn btn-primary py-2 px-4">
                     {t('BookAService')}
                 </a>
+
+                
+            </div>
+            <div className='d-none d-lg-block px-2' >
+            <Languages />
             </div>
         </nav>
     );

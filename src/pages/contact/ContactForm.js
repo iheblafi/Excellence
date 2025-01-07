@@ -1,8 +1,11 @@
 import React from 'react'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
+import { useTranslation } from 'react-i18next';
 
 function ContactForm() {
+    const { t } = useTranslation();
+    
     return (
         <div> <div>
             <div className="container-xxl bg-white p-0">
@@ -21,12 +24,12 @@ function ContactForm() {
                     <Navbar />
                     <div className="container-xxl py-5 bg-dark hero-header mb-5">
                         <div className="container text-center my-5 pt-5 pb-4">
-                            <h1 className="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
+                            <h1 className="display-3 text-white mb-3 animated slideInDown">{t('ContactUs')}</h1>
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb justify-content-center text-uppercase">
-                                    <li className="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li className="breadcrumb-item"><a href="#">{t('Home')}</a></li>
                                     <li className="breadcrumb-item"><a href="#">Pages</a></li>
-                                    <li className="breadcrumb-item text-white active" aria-current="page">Contact Us</li>
+                                    <li className="breadcrumb-item text-white active" aria-current="page">{t('ContactUs')}</li>
                                 </ol>
                             </nav>
                         </div>
@@ -39,22 +42,22 @@ function ContactForm() {
                 <div className="container-xxl py-5">
                     <div className="container">
                         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <h5 className="section-title ff-secondary text-center text-primary fw-normal">Contact Us</h5>
-                            <h1 className="mb-5">Contact For Any Query</h1>
+                            <h5 className="section-title ff-secondary text-center text-primary fw-normal">{t('ContactUs')}</h5>
+                            <h1 className="mb-5">{t('ContactQuery')}</h1>
                         </div>
                         <div className="row g-4">
                             <div className="col-12">
                                 <div className="row gy-4">
                                     <div className="col-md-4">
-                                        <h5 className="section-title ff-secondary fw-normal text-start text-primary">Booking</h5>
+                                        <h5 className="section-title ff-secondary fw-normal text-start text-primary">{t('Booking')}</h5>
                                         <p><i className="fa fa-envelope-open text-primary me-2"></i>contact@excellenceairport.fr</p>
                                     </div>
                                     <div className="col-md-4">
-                                        <h5 className="section-title ff-secondary fw-normal text-start text-primary">General</h5>
+                                        <h5 className="section-title ff-secondary fw-normal text-start text-primary">{t('General')}</h5>
                                         <p><i className="fa fa-envelope-open text-primary me-2"></i>contact@excellenceairport.fr</p>
                                     </div>
                                     <div className="col-md-4">
-                                        <h5 className="section-title ff-secondary fw-normal text-start text-primary">Technical</h5>
+                                        <h5 className="section-title ff-secondary fw-normal text-start text-primary">{t('Technical')}</h5>
                                         <p><i className="fa fa-envelope-open text-primary me-2"></i>contact@excellenceairport.fr</p>
                                     </div>
                                 </div>
@@ -78,29 +81,29 @@ function ContactForm() {
                                             <div className="col-md-6">
                                                 <div className="form-floating">
                                                     <input type="text" className="form-control" id="name" placeholder="Your Name" />
-                                                    <label for="name">Your Name</label>
+                                                    <label for="name">{t('YourName')}</label>
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
                                                 <div className="form-floating">
                                                     <input type="email" className="form-control" id="email" placeholder="Your Email" />
-                                                    <label for="email">Your Email</label>
+                                                    <label for="email">{t('YourEmail')}</label>
                                                 </div>
                                             </div>
                                             <div className="col-12">
                                                 <div className="form-floating">
                                                     <input type="text" className="form-control" id="subject" placeholder="Subject" />
-                                                    <label for="subject">Subject</label>
+                                                    <label for="subject">{t('Subject')}</label>
                                                 </div>
                                             </div>
                                             <div className="col-12">
                                                 <div className="form-floating">
                                                     <textarea className="form-control" placeholder="Leave a message here" id="message" style={{ height: "150px" }}></textarea>
-                                                    <label for="message">Message</label>
+                                                    <label for="message">{t('Message')}</label>
                                                 </div>
                                             </div>
                                             <div className="col-12">
-                                                <button className="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                                <button className="btn btn-primary w-100 py-3" type="submit">{t('SendMessage')}</button>
                                             </div>
                                         </div>
                                     </form>

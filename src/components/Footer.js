@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container py-5">
                 <div className="row g-5">
                     <div className="col-lg-4 col-md-6 text-start">
-                        <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">{t('Company')}</h4>
                         <a className="btn btn-link" href="">{t('AboutUs')}</a>
                         <a className="btn btn-link" href="">{t('ContactUs')}</a>
                         <a className="btn btn-link" href="">{t('Booking')}</a>

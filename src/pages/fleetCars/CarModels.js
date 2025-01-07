@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import { useTranslation } from 'react-i18next';
 
 function CarModels() {
+    const { t } = useTranslation();
     return (
 
         <div>
@@ -24,12 +26,12 @@ function CarModels() {
 
                     <div class="container-xxl py-5 bg-dark hero-header mb-5">
                         <div class="container text-center my-5 pt-5 pb-4">
-                            <h1 class="display-3 text-white mb-3 animated slideInDown">Car Models</h1>
+                            <h1 class="display-3 text-white mb-3 animated slideInDown">{t('CarModels')}</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center text-uppercase">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">{t('Home')}</a></li>
                                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Car Models</li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">{t('CarModels')}</li>
                                 </ol>
                             </nav>
                         </div>
@@ -49,19 +51,11 @@ function CarModels() {
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <h5 className="section-title ff-secondary text-start text-primary fw-normal">Car Models</h5>
-                                <h1 className="mb-4">About Our Car Models</h1>
+                                <h5 className="section-title ff-secondary text-start text-primary fw-normal">{t('CarModels')}</h5>
+                                <h1 className="mb-4">{t('AboutOurCarModels')}</h1>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
 
-                                    Excellence Airport proudly offers a prestigious fleet of over fifty luxury vehicles, 
-                                    meticulously maintained and managed by a skilled logistics team dedicated to providing 
-                                    seamless service. At the heart of our collection are the iconic Mercedes-Benz models, including 
-                                    the elegant Class-E, the sophisticated Class-S, and the spacious and versatile Class-V, each designed 
-                                    to deliver unparalleled comfort and performance for any occasion.
-
-                                    For those seeking an even more opulent experience, our exclusive vehicle options include world-renowned 
-                                    names such as Maybach, Rolls Royce, and Range Rover, available upon request. Whether for business, leisure, 
-                                    or a special event, our versatile fleet and attentive team ensure that your travel experience is nothing short of exceptional.</p>
+                                {t('AboutOurCarModelsDesc')}</p>
 
                             </div>
                         </div>
@@ -71,8 +65,8 @@ function CarModels() {
                 <div class="container-xxl pt-5 pb-3">
                     <div class="container">
                         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Class E</h5>
-                            <h1 class="mb-5">Our Car Models</h1>
+                            <h5 class="section-title ff-secondary text-center text-primary fw-normal">{t('Class')} E</h5>
+                            <h1 class="mb-5">{t('FirstCategory')}</h1>
                         </div>
                         <div class="row g-4 d-flex justify-content-center align-items-center">
                             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -81,7 +75,7 @@ function CarModels() {
                                         <img class="img-fluid" src="img/mercedesClassE.jpg" alt="" />
                                     </div>
                                     <h5 class="mb-0">Mercedes</h5>
-                                    <small>Class E</small>
+                                    <small>{t('Class')} E</small>
                                     <div class="d-flex justify-content-center mt-3">
 
                                     </div>
@@ -94,7 +88,7 @@ function CarModels() {
                                         <img class="img-fluid" src="img/mercedesClassE1.jpg" alt="" />
                                     </div>
                                     <h5 class="mb-0">Mercedes </h5>
-                                    <small>Class E</small>
+                                    <small>{t('Class')} E</small>
 
                                 </div>
                             </div>
@@ -110,8 +104,8 @@ function CarModels() {
                 <div class="container-xxl pt-5 pb-3">
                     <div class="container">
                         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Class S</h5>
-                            <h1 class="mb-5">Our Available Cars</h1>
+                            <h5 class="section-title ff-secondary text-center text-primary fw-normal">{t('Class')} S</h5>
+                            <h1 class="mb-5">{t('SecondCategory')}</h1>
                         </div>
                         <div class="row g-4 d-flex justify-content-center align-items-center">
                             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -120,7 +114,7 @@ function CarModels() {
                                         <img class="img-fluid" src="img/mercedesClassS.jpg" alt="" />
                                     </div>
                                     <h5 class="mb-0">Mercedes</h5>
-                                    <small>Class S</small>
+                                    <small>{t('Class')} S</small>
                                     <div class="d-flex justify-content-center mt-3">
 
                                     </div>
@@ -133,7 +127,7 @@ function CarModels() {
                                         <img class="img-fluid" src="img/mercedesClassS1.jpg" alt="" />
                                     </div>
                                     <h5 class="mb-0">Mercedes </h5>
-                                    <small>Class S</small>
+                                    <small>{t('Class')} S</small>
 
                                 </div>
                             </div>
@@ -149,8 +143,8 @@ function CarModels() {
                 <div class="container-xxl pt-5 pb-3 jus">
                     <div class="container">
                         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Class V</h5>
-                            <h1 class="mb-5">Our Available Cars</h1>
+                            <h5 class="section-title ff-secondary text-center text-primary fw-normal">{t('Class')} V</h5>
+                            <h1 class="mb-5">{t('ThirdCategory')}</h1>
                         </div>
                         <div class="row g-4 d-flex justify-content-center align-items-center">
                             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -159,7 +153,7 @@ function CarModels() {
                                         <img class="img-fluid" src="img/mercedesClassV1.jpg" alt="" />
                                     </div>
                                     <h5 class="mb-0">Mercedes</h5>
-                                    <small>Class V</small>
+                                    <small>{t('Class')} V</small>
                                     <div class="d-flex justify-content-center mt-3">
 
                                     </div>
@@ -172,7 +166,7 @@ function CarModels() {
                                         <img class="img-fluid" src="img/mercedesClassV1.jpg" alt="" />
                                     </div>
                                     <h5 class="mb-0">Mercedes </h5>
-                                    <small>Class V</small>
+                                    <small>{t('Class')} V</small>
 
                                 </div>
                             </div>

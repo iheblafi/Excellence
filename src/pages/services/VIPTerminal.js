@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import { useTranslation } from 'react-i18next';
 
 function VIPTerminal() {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="container-xxl bg-white p-0">
@@ -19,12 +21,12 @@ function VIPTerminal() {
 
           <div class="container-xxl py-5 bg-dark hero-header mb-5">
             <div class="container text-center my-5 pt-5 pb-4">
-              <h1 class="display-3 text-white mb-3 animated slideInDown">VIP Terminal</h1>
+              <h1 class="display-3 text-white mb-3 animated slideInDown">{t('VIPTerminal')}</h1>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center text-uppercase">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">{t('Home')}</a></li>
                   <li class="breadcrumb-item"><a href="#">Services</a></li>
-                  <li class="breadcrumb-item text-white active" aria-current="page">VIP Terminal</li>
+                  <li class="breadcrumb-item text-white active" aria-current="page">{t('VIPTerminal')}</li>
                 </ol>
               </nav>
             </div>
@@ -51,29 +53,9 @@ function VIPTerminal() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <h5 className="section-title ff-secondary text-start text-primary fw-normal">VIP Terminal</h5>
-                <h1 className="mb-4">Airport VIP Terminal</h1>
-                <p className="mb-4" style={{ textAlign: 'justify' }}>Picture a journey that begins not in the crowded halls of a busy airport, but in the serene
-                  exclusivity of a private terminal a space reserved for those who seek both privacy and efficiency. The VIP Terminal Service redefines air travel,
-                  offering a seamless and tranquil experience that lets you focus on what matters most: your comfort and peace of mind.
-
-                  From the moment you arrive, you're welcomed into an oasis of calm. Far from the hustle and bustle, this private terminal is your gateway to a more
-                  refined way of traveling. Here, every detail has been curated for your convenience, starting with personalized assistance that handles all airport
-                  procedures on your behalf. Security checks, immigration, and customs tasks that often demand your time and patience are quietly managed behind the scenes,
-                  leaving you free to relax.
-
-                  As you settle into the plush surroundings of the terminal, the stress of traditional travel fades away.
-                  A dedicated team ensures every aspect of your journey is perfectly orchestrated, from luggage handling to last-minute requests.
-
-
-                  Whether you're catching up on work, enjoying a quiet moment, or savoring a refreshment, the experience is tailored entirely to you.
-
-                  And when it's time to board, the journey continues with seamless precision. A private transfer whisks you directly to your aircraft,
-                  bypassing the crowded gates and queues. Every step is designed to protect your time, your privacy, and your sense of ease.
-
-                  The VIP Terminal Service isn't just an upgrade; it's a reimagining of what travel can be. It's a promise of exclusivity,
-                  a commitment to personalization, and an experience where the ordinary is replaced with the extraordinary. From start to finish,
-                  it's air travel as it was always meant to be luxurious, effortless, and uniquely yours. </p>
+                <h5 className="section-title ff-secondary text-start text-primary fw-normal">{t('VIPTerminal')}</h5>
+                <h1 className="mb-4">{t('AirportVIPTerminal')}</h1>
+                <p className="mb-4" style={{ textAlign: 'justify' }}> {t('AirportVIPTerminalDesc')} </p>
 
               </div>
             </div>
@@ -84,8 +66,8 @@ function VIPTerminal() {
         <div className="container-xxl py-5">
           <div className="container">
             <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-              <h5 className="section-title ff-secondary text-center text-primary fw-normal">VIP Terminal</h5>
-              <h1 className="mb-5">Explore Our VIP Terminal Services</h1>
+              <h5 className="section-title ff-secondary text-center text-primary fw-normal">{t('VIPTerminal')}</h5>
+              <h1 className="mb-5">{t('ExploreOurVIPTerminalServices')}</h1>
             </div>
             <div className="tab-className text-center wow fadeInUp" data-wow-delay="0.1s">
               <ul className="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
@@ -93,7 +75,7 @@ function VIPTerminal() {
                   <a className="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
                     <i className="fa fa-plane-arrival fa-2x text-primary"></i>
                     <div className="ps-3">
-                      <h6 className="mt-n1 mb-0">Arrival</h6>
+                      <h6 className="mt-n1 mb-0">{t('Arrival')}</h6>
                     </div>
                   </a>
                 </li>
@@ -101,7 +83,7 @@ function VIPTerminal() {
                   <a className="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
                     <i className="fa fa-plane-departure fa-2x text-primary"></i>
                     <div className="ps-3">
-                      <h6 className="mt-n1 mb-0">Departure</h6>
+                      <h6 className="mt-n1 mb-0">{t('Departure')}</h6>
                     </div>
                   </a>
                 </li>
@@ -109,7 +91,7 @@ function VIPTerminal() {
                   <a className="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
                     <i className="fa fa-forward fa-2x text-primary"></i>
                     <div className="ps-3">
-                      <h6 className="mt-n1 mb-0">Transition</h6>
+                      <h6 className="mt-n1 mb-0">{t('Transit')}</h6>
                     </div>
                   </a>
                 </li>
@@ -123,9 +105,9 @@ function VIPTerminal() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/vipterminal.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Transport to VIP terminal</span>
+                            <span>{t('TransportToVIPTerminal')}</span>
                           </h5>
-                          <small className="fst-italic">Chauffeur-driven transport from the aircraft to the VIP terminal.</small>
+                          <small className="fst-italic">{t('TransportToVIPTerminalDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -135,9 +117,9 @@ function VIPTerminal() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/escortoutside.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Escorting passengers outside the airport</span>
+                            <span>{t('EscortingPassengersOutside')}</span>
                           </h5>
-                          <small className="fst-italic">Escorting passengers to their agreed transportation point.</small>
+                          <small className="fst-italic">{t('EscortingPassengersOutsideDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -147,9 +129,9 @@ function VIPTerminal() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/airportformalities.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Handling airport formalities</span>
+                            <span>{t('HandlingAirportFormalities')}</span>
                           </h5>
-                          <small className="fst-italic">A dedicated agent handles all airport formalities, including immigration and customs.</small>
+                          <small className="fst-italic">{t('HandlingAirportFormalitiesDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -158,9 +140,9 @@ function VIPTerminal() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/lugguage.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Handling lugguage</span>
+                            <span>{t('HandlingLugguage')}</span>
                           </h5>
-                          <small className="fst-italic">Luggage is delivered directly to the VIP terminal.</small>
+                          <small className="fst-italic">{t('HandlingLugguageDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -177,9 +159,9 @@ function VIPTerminal() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/personalized.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Personalized Coordination</span>
+                            <span>{t('PersonalizedCoordination')}</span>
                           </h5>
-                          <small className="fst-italic">Personalized coordination of drop-off time and location with the assigned agent before arrival. </small>
+                          <small className="fst-italic">{t('PersonalizedCoordinationDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -191,9 +173,9 @@ function VIPTerminal() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/combination.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Combination</span>
+                            <span>{t('Combination')}</span>
                           </h5>
-                          <small className="fst-italic">Curb side meet-and-greet, luggage assistance, and expedited check-in.</small>
+                          <small className="fst-italic">{t('CombinationDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -202,9 +184,9 @@ function VIPTerminal() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/security.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Security</span>
+                            <span>{t('Security')}</span>
                           </h5>
-                          <small className="fst-italic">Security and passport control are handled within the VIP terminal.</small>
+                          <small className="fst-italic">{t('SecurityDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -213,9 +195,9 @@ function VIPTerminal() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/chauffeurdeparture.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Chauffeur Service</span>
+                            <span>{t('ChauffeurService')}</span>
                           </h5>
-                          <small className="fst-italic">Chauffeur service to the aircraft if it is on a remote stand.</small>
+                          <small className="fst-italic">{t('ChauffeurServiceDesc')}</small>
                         </div>
                       </div>
                     </div>
@@ -233,9 +215,9 @@ function VIPTerminal() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/chauffeurdeparture.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Chauffeur service</span>
+                            <span>{t('ChauffeurrService')}</span>
                           </h5>
-                          <small className="fst-italic">Chauffeur service from the aircraft to the VIP terminal for a relaxing layover.</small>
+                          <small className="fst-italic">{t('ChauffeurrServiceDescs')}</small>
                         </div>
                       </div>
                     </div>
@@ -245,9 +227,9 @@ function VIPTerminal() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/escortoutside.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Chauffeur transport</span>
+                            <span>{t('ChauffeurTransport')}</span>
                           </h5>
-                          <small className="fst-italic">Chauffeur transport back to the aircraft for the next leg of the journey.                                                    </small>
+                          <small className="fst-italic"> {t('ChauffeurTransportDesc')} </small>
                         </div>
                       </div>
                     </div>
@@ -257,9 +239,9 @@ function VIPTerminal() {
                         <img className="flex-shrink-0 img-fluid rounded" src="img/lugguage.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
-                            <span>Assistance with luggage</span>
+                            <span>{t('AssistanceWithLuggage')}</span>
                           </h5>
-                          <small className="fst-italic">Assistance with luggage and airport formalities.</small>
+                          <small className="fst-italic">{t('AssistanceWithLuggageDesc')}</small>
                         </div>
                       </div>
                     </div>

@@ -1,8 +1,11 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import { useTranslation } from 'react-i18next';
 
 function AvaialbleCars() {
+        const { t } = useTranslation();
+    
     return (
         <div>
             <div class="container-xxl bg-white p-0">
@@ -23,12 +26,12 @@ function AvaialbleCars() {
 
                     <div class="container-xxl py-5 bg-dark hero-header mb-5">
                         <div class="container text-center my-5 pt-5 pb-4">
-                            <h1 class="display-3 text-white mb-3 animated slideInDown">Available Cars</h1>
+                            <h1 class="display-3 text-white mb-3 animated slideInDown">{t('AvailableCars')}</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center text-uppercase">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">{t('Home')}</a></li>
                                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Available Cars</li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">{t('AvailableCars')}</li>
                                 </ol>
                             </nav>
                         </div>
@@ -48,20 +51,11 @@ function AvaialbleCars() {
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <h5 className="section-title ff-secondary text-start text-primary fw-normal">Available Cars</h5>
-                                <h1 className="mb-4">About Our Available cars</h1>
+                                <h5 className="section-title ff-secondary text-start text-primary fw-normal">{t('AvailableCars')}</h5>
+                                <h1 className="mb-4">{t('AboutCars')}</h1>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
 
-                                    Excellence Airport Chauffeur-Driven Transfers ensure unmatched 
-                                    convenience with a wide selection of vehicles readily available
-                                     to suit every traveler's needs. Whether you require an economy 
-                                     car for a quick trip, a luxury sedan for a touch of sophistication, 
-                                     or a spacious van for group travel, the fleet is always prepared 
-                                     to accommodate your request. With vehicles available round-the-clock,
-                                      passengers can enjoy seamless airport pickups, drop-offs, and intercity 
-                                      transfers without worrying about schedules. No matter the time or
-                                       destination, your car is always ready, ensuring a reliable and stress-free
-                                        journey.</p>
+                                {t('AboutCars2')}</p>
 
                             </div>
                         </div>
@@ -71,8 +65,8 @@ function AvaialbleCars() {
                 <div class="container-xxl pt-5 pb-3">
                     <div class="container">
                         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Fleet</h5>
-                            <h1 class="mb-5">Our Available Cars</h1>
+                            <h5 class="section-title ff-secondary text-center text-primary fw-normal">{t('Fleet')}</h5>
+                            <h1 class="mb-5">{t('OurAvailableCars')}</h1>
                         </div>
                         <div class="row g-4">
                             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -81,7 +75,7 @@ function AvaialbleCars() {
                                         <img class="img-fluid" src="img/mercedesClassE.jpg" alt="" />
                                     </div>
                                     <h5 class="mb-0">Mercedes</h5>
-                                    <small>Class E</small>
+                                    <small>{t('Class')} E</small>
                                     <div class="d-flex justify-content-center mt-3">
                                        
                                     </div>
@@ -94,7 +88,7 @@ function AvaialbleCars() {
                                         <img class="img-fluid" src="img/mercedesClassE1.jpg" alt="" />
                                     </div>
                                     <h5 class="mb-0">Mercedes </h5>
-                                    <small>Class E</small>
+                                    <small>{t('Class')} E</small>
                                     
                                 </div>
                             </div>
@@ -104,7 +98,7 @@ function AvaialbleCars() {
                                         <img class="img-fluid" src="img/mercedesClassS.jpg" alt="" />
                                     </div>
                                     <h5 class="mb-0">Mercedes</h5>
-                                    <small>Class S</small>
+                                    <small>{t('Class')} S</small>
                                     
                                 </div>
                             </div>
@@ -118,7 +112,7 @@ function AvaialbleCars() {
                                         <img class="img-fluid" src="img/mercedesClassV.jpg" alt="" />
                                     </div>
                                     <h5 class="mb-0">Mercedes</h5>
-                                    <small>Class V</small>
+                                    <small>{t('Class')} V</small>
                                     <div class="d-flex justify-content-center mt-3">
                                        
                                     </div>

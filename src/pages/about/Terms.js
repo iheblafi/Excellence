@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import { useTranslation } from 'react-i18next';
 
 function Terms() {
+    const { t } = useTranslation();
   return (
     <div>
     <div class="container-xxl bg-white p-0">
@@ -23,12 +25,12 @@ function Terms() {
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Terms & Policies</h1>
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">{t('Terms&Policies')}</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">{t('Home')}</a></li>
                             <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Terms & Policies</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">{t('Terms&Policies')}</li>
                         </ol>
                     </nav>
                 </div>
@@ -43,35 +45,23 @@ function Terms() {
            
            
             <div className="col-lg-12">
-                <h5 className="section-title ff-secondary text-start text-primary fw-normal">Terms & Policies</h5>
-                <h1 className="mb-4">Our Commitment to Transparency and Trust</h1>
+                <h5 className="section-title ff-secondary text-start text-primary fw-normal">{t('Terms&Policies')}</h5>
+                <h1 className="mb-4">{t('Commitment')}</h1>
                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                    At Excellence Airport, we prioritize clarity, fairness, and mutual respect in our interactions with clients.
-                    Our terms and policies are designed to ensure a seamless and trustworthy experience, reflecting our unwavering 
-                    commitment to professionalism and customer satisfaction.
+                {t('CommitmentDes')}
                 </p>
                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                    <strong>Reservation and Payment Terms:</strong> To provide the highest quality of service, all bookings require 
-                    a signed purchase order and a 50% deposit upfront. Payments are to be made promptly, in line with the agreed terms, 
-                    ensuring smooth and uninterrupted service delivery. Invoices are payable at our headquarters: 9 Rue Jean-Jacques Rousseau, 
-                    95350 Saint-Brice-sous-Forêt.
+                    <strong>{t('ReservationAndPaymentTerms')}:</strong> {t('ReservationAndPaymentTermsDesc')}
                 </p>
                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                    <strong>Dispute Resolution and Late Payments:</strong> We understand that issues may occasionally arise. Any claims 
-                    regarding services must be submitted in writing within eight days of receiving an invoice. For late payments, 
-                    interest will be applied at a rate of 1% per month, and additional penalties may be imposed as stipulated in our policies. 
-                    These measures ensure fairness and accountability on both sides.
+                    <strong>{('DisputeResolutionandLatePayments')}:</strong> {t('DisputeResolutionandLatePaymentsDesc')}
                 </p>
                 
                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                    <strong>Legal Framework:</strong> Our operations are governed by French law, ensuring a robust and transparent 
-                    framework for all transactions. Any disputes will fall under the exclusive jurisdiction of the Pontoise Commercial Courts, 
-                    providing a clear pathway for resolution.
+                    <strong>{t('LegalFramework')}:</strong> {t('LegalFrameworkDesc')}
                 </p>
                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                    Excellence Airport stands by its commitment to delivering exceptional service while adhering to ethical and 
-                    legal standards. These terms and policies are not just guidelines; they embody our dedication to integrity and trust 
-                    in every aspect of our operations.
+                {t('CommitmentDes2')}
                 </p>
             </div>
         </div>

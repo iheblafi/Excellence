@@ -1,8 +1,10 @@
 import React from 'react'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
+import { useTranslation } from 'react-i18next';
 
 function ComponayHistory() {
+    const { t } = useTranslation();
     return (
         <div>
             <div className="container-xxl bg-white p-0">
@@ -21,12 +23,12 @@ function ComponayHistory() {
 
                     <div className="container-xxl py-5 bg-dark hero-header mb-5">
                         <div className="container text-center my-5 pt-5 pb-4">
-                            <h1 className="display-3 text-white mb-3 animated slideInDown">Company History & Team</h1>
+                            <h1 className="display-3 text-white mb-3 animated slideInDown">{t('CompanyHistory')}</h1>
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb justify-content-center text-uppercase">
-                                    <li className="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li className="breadcrumb-item"><a href="#">{t('Home')}</a></li>
                                     <li className="breadcrumb-item"><a href="#">Pages</a></li>
-                                    <li className="breadcrumb-item text-white active" aria-current="page">Company History & Team</li>
+                                    <li className="breadcrumb-item text-white active" aria-current="page">{t('CompanyHistory')}</li>
                                 </ol>
                             </nav>
                         </div>
@@ -56,29 +58,20 @@ function ComponayHistory() {
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <h5 className="section-title ff-secondary text-start text-primary fw-normal">Company History</h5>
-                                <h1 className="mb-4">Welcome to <i className="fa fa-plane-departure text-primary me-2"></i>Excellence Airport</h1>
+                                <h5 className="section-title ff-secondary text-start text-primary fw-normal">{t('CompanyHistory')}</h5>
+                                <h1 className="mb-4">{t('Welcometo')}<i className="fa fa-plane-departure text-primary me-2"></i>Excellence Airport</h1>
                                 <p className="mb-4">
-                                    At Excellence Airport, we specialize in transforming the chaos of travel
-                                    into a seamless and luxurious experience.
-                                    Strategically located at Roissy Charles de Gaulle Airport, our services
-                                    cater to discerning travelers who value privacy,
-                                    efficiency, and personalized care. From business executives to leisure
-                                    travelers, we ensure every journey begins and ends with ease.
+                                    {t('WelcomeToAbout1')}
                                 </p>
                                 <p className="mb-4">
-                                    Founded by Benjamin Slama, Excellence Airport has grown over 15 years to
-                                    become synonymous with VIP airport services.
-                                    Our multilingual team, fluent in French, English, and Spanish, is dedicated
-                                    to anticipating your needs and exceeding expectations,
-                                    providing unmatched care and attention every step of the way.
+                                {t('WelcomeToAbout2')}
                                 </p>
                                 <div className="row g-4 mb-4">
                                     <div className="col-sm-6">
                                         <div className="d-flex align-items-center border-start border-5 border-primary px-3">
                                             <h1 className="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">20</h1>
                                             <div className="ps-4">
-                                                <p className="mb-0">Years of</p>
+                                                <p className="mb-0">{t('YearsOf')}</p>
                                                 <h6 className="text-uppercase mb-0">Excellence</h6>
                                             </div>
                                         </div>
@@ -87,39 +80,25 @@ function ComponayHistory() {
                                         <div className="d-flex align-items-center border-start border-5 border-primary px-3">
                                             <h1 className="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
                                             <div className="ps-4">
-                                                <p className="mb-0">Luxury</p>
-                                                <h6 className="text-uppercase mb-0">Vehicles</h6>
+                                                <p className="mb-0">{t('Luxury')}</p>
+                                                <h6 className="text-uppercase mb-0">{t('Vehicles')}</h6>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <p className="mb-4">
-                                    We proudly offer a comprehensive suite of premium services, including VIP Meet
-                                    & Greet, Chauffeur-Driven Transfers,
-                                    and access to exclusive private terminals. Every service is designed to
-                                    simplify airport procedures, allowing you to enjoy
-                                    a smooth, stress-free journey. Whether it's fast-track immigration,
-                                    luxury transportation, or a private terminal experience,
-                                    we ensure unparalleled attention to detail.
+                                {t('AboutDesc1')}
                                 </p>
                                 <p className="mb-4">
-                                    Our fleet of over 50 luxury vehicles caters to every preference,
-                                    including Mercedes-Benz models (Class-E, Class-S, and Class-V),
-                                    with additional options like Maybach, Rolls Royce, and Range Rover
-                                    available on request. Each transfer is managed by a
-                                    professional chauffeur, equipped with local expertise to enhance your
-                                    journey.
+                                   {t('AboutDesc2')}
                                 </p>
                                 <p className="mb-4">
-                                    <strong>Address:</strong> 9 rue Jean-Jacques Rousseau, 95350 Saint-Brice-sous-Forêt, France<br />
-                                    <strong>Contact:</strong> <a href="mailto:contact@excellenceairport.fr">contact@excellenceairport.fr</a> | +33 6 99 26 81 75<br />
-                                    <strong>RCS:</strong> 835 232 992 R.C.S. Pontoise
+                                    <strong>{t('Address')}:</strong>{t('AddressDesc')}<br />
+                                    <strong>{t('Contact')}:</strong> <a href="mailto:contact@excellenceairport.fr">contact@excellenceairport.fr</a> | +33 6 99 26 81 75<br />
+                                    <strong>RCS:</strong> 835 232 992 R.C.S. Posntoise
                                 </p>
                                 <p className="mb-4">
-                                    At Excellence Airport, we are dedicated to redefining airport
-                                    travel by combining innovation, luxury, and personalized service.
-                                    Join the countless clients worldwide who trust us to deliver an
-                                    unparalleled airport experience.
+                                   {t('AboutDesc3')}
                                 </p>
                             </div>
 
@@ -128,11 +107,11 @@ function ComponayHistory() {
                     </div>
                 </div>
 
-                <div className="container-xxl pt-5 pb-3">
+                {/* <div className="container-xxl pt-5 pb-3">
                     <div className="container">
                         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <h5 className="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
-                            <h1 className="mb-5">Our Professional Drivers</h1>
+                            <h5 className="section-title ff-secondary text-center text-primary fw-normal">{t('TeamMembers')}</h5>
+                            <h1 className="mb-5">{t('OurProfessionalDrivers')}</h1>
                         </div>
                         <div className="row g-4">
                             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -193,7 +172,7 @@ function ComponayHistory() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <Footer />
 
