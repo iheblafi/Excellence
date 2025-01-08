@@ -30,7 +30,7 @@ function Home() {
                                         {t('EnjoyMessage')}
                                     </h1>
                                     <p className="text-white animated slideInLeft mb-4 pb-2">{t('TravelingMessage')}</p>
-                                    <a href="" className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">{t('BookService')}</a>
+                                    <NavLink to="/contactform" className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">{t('BookService')}</NavLink>
                                 </div>
                                 <div className="col-lg-6 text-center text-lg-end overflow-hidden">
                                     <img className="img-fluid" src="img/heroo.png" alt="" />
@@ -108,7 +108,7 @@ function Home() {
                                 <h5 className="section-title ff-secondary text-start text-primary fw-normal">{t('AboutUs')}</h5>
                                 <h1 className="mb-4">{t('Welcometo')}<i className="fa fa-plane text-primary me-2"></i>Excellence Airport</h1>
                                 <p className="mb-4">{t('WelcomeDesc1')}</p>
-                                <p className="mb-4">{t('WelcomeDesc1')}</p>
+                                <p className="mb-4">{t('WelcomeDesc2')}</p>
                                 <div className="row g-4 mb-4">
                                     <div className="col-sm-6">
                                         <div className="d-flex align-items-center border-start border-5 border-primary px-3">
@@ -431,11 +431,11 @@ function Home() {
                 <div className="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="row g-0">
                         <div className="col-md-6">
-                            <img className="img-fluid rounded" src="img/airportbook.jpg" alt="" style={{ maxWidth: "720px" }} />
+                            <img className="img-fluid rounded" src="img/plane2.jpg" alt=""  style={{ maxWidth: "100%", height: "auto" }} />
 
                         </div>
                         <div className="col-md-6 bg-dark d-flex align-items-center">
-                            <div className="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                            <div className="p-4 wow fadeInUp" data-wow-delay="0.2s">
                                 <h5 className="section-title ff-secondary text-start text-primary fw-normal">{t('Booking')}</h5>
                                 <h1 className="text-white mb-4">{t('BookAServiceOnline')}</h1>
                                 <form>
