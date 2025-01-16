@@ -241,7 +241,7 @@ function Home() {
                                             </div>
                                         </div>
 
-                                        <div className="col-lg-6">
+                                        {/* <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/vipterminal.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
@@ -251,7 +251,7 @@ function Home() {
                                                     <small className="fst-italic">{t('TransportToVIPTerminalDesc')}</small>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
 
                                     </div>
                                 </div>
@@ -385,7 +385,7 @@ function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-6">
+                                        {/* <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/chauffeurdeparture.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
@@ -395,9 +395,9 @@ function Home() {
                                                     <small className="fst-italic">{t('ChauffeurrServiceDesc')}</small>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
 
-                                        <div className="col-lg-6">
+                                        {/* <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
                                                 <img className="flex-shrink-0 img-fluid rounded" src="img/escortoutside.jpg" alt="" style={{ width: '80px' }} />
                                                 <div className="w-100 d-flex flex-column text-start ps-4">
@@ -407,7 +407,7 @@ function Home() {
                                                     <small className="fst-italic">{t('ChauffeurTransportDesc')}</small>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
 
                                         <div className="col-lg-6">
                                             <div className="d-flex align-items-center">
@@ -431,7 +431,7 @@ function Home() {
                 <div className="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="row g-0">
                         <div className="col-md-6">
-                            <img className="img-fluid rounded" src="img/plane2.jpg" alt=""  style={{ maxWidth: "100%", height: "auto" }} />
+                            <img className="img-fluid rounded" src="img/plane2.jpg" alt="" style={{ maxWidth: "100%", height: "auto" }} />
 
                         </div>
                         <div className="col-md-6 bg-dark d-flex align-items-center">
@@ -502,32 +502,32 @@ function Home() {
                     </div>
                 </div> */}
 
-<div className="container-xxl pt-5 pb-3">
+                {/* <div className="container-xxl pt-5 pb-3">
                     <div className="container">
                         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
                             <h5 className="section-title ff-sescondary text-center text-primary fw-normal">{t('TeamMembers')}</h5>
                             <h1 className="mb-5">{t('OurDrivers')}</h1>
                         </div>
-                      
-                         {/* <div className="row g-4"> */}
 
-                        <video src="meet&greet.mp4" controls/>
-                        {/* </div>  */}
+                        
+
+                        <video src="meet&greet.mp4" controls />
+                        
                     </div>
-                </div>
+                </div> */}
 
 
-                <div className="container-xxl pt-5 pb-3">
+                {/* <div className="container-xxl pt-5 pb-3">
                     <div className="container">
                         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
                             <h5 className="section-title ff-sescondary text-center text-primary fw-normal">{t('TeamMembers')}</h5>
-                            <h1 className="mb-5">{t('OurDrivers')}</h1>
+                             <h1 className="mb-5">{t('OurTeam')}</h1> 
                         </div>
                         <div className="row g-4">
                             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                 <div className="team-item text-center rounded overflow-hidden">
                                     <div className="rounded-circle overflow-hidden m-4">
-                                        <img className="img-fluid" src="img/driver1.jpg" alt="" />
+                                        <img className="img-fluid" src="img/testimonial-1.jpg" alt="" />
                                     </div>
                                     <h5 className="mb-0">Full Name</h5>
                                     <small>Designation</small>
@@ -541,7 +541,7 @@ function Home() {
                             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                                 <div className="team-item text-center rounded overflow-hidden">
                                     <div className="rounded-circle overflow-hidden m-4">
-                                        <img className="img-fluid" src="img/driver2.jpg" alt="" />
+                                        <img className="img-fluid" src="img/testimonial-2.jpg" alt="" />
                                     </div>
                                     <h5 className="mb-0">Full Name</h5>
                                     <small>Designation</small>
@@ -555,7 +555,7 @@ function Home() {
                             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                                 <div className="team-item text-center rounded overflow-hidden">
                                     <div className="rounded-circle overflow-hidden m-4">
-                                        <img className="img-fluid" src="img/driver3.jpg" alt="" />
+                                        <img className="img-fluid" src="img/testimonial-3.jpg" alt="" />
                                     </div>
                                     <h5 className="mb-0">Full Name</h5>
                                     <small>Designation</small>
@@ -569,7 +569,7 @@ function Home() {
                             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                                 <div className="team-item text-center rounded overflow-hidden">
                                     <div className="rounded-circle overflow-hidden m-4">
-                                        <img className="img-fluid" src="img/driver4.jpg" alt="" />
+                                        <img className="img-fluid" src="img/testimonial-4.jpg" alt="" />
                                     </div>
                                     <h5 className="mb-0">Full Name</h5>
                                     <small>Designation</small>
@@ -582,7 +582,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
 

@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import { useTranslation } from 'react-i18next';
+import AutoPlayVideo from '../../utils/AutoPlayVideo';
 
 function ComponayHistory() {
     const { t } = useTranslation();
@@ -93,7 +94,7 @@ function ComponayHistory() {
                                    {t('AboutDesc2')}
                                 </p>
                                 <p className="mb-4">
-                                    <strong>{t('Address')}:</strong>{t('AddressDesc')}<br />
+                                    <strong>{t('Address')}</strong> {t('AddressDesc')}<br />
                                     <strong>{t('Contact')}:</strong> <a href="mailto:contact@excellenceairport.fr">contact@excellenceairport.fr</a> | +33 6 99 26 81 75<br />
                                     <strong>RCS:</strong> 835 232 992 R.C.S. Posntoise
                                 </p>
@@ -106,6 +107,16 @@ function ComponayHistory() {
                         </div>
                     </div>
                 </div>
+
+                <div className="container-l pt-2 pb-3">
+          <div className="container">
+            <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+              <h5 className="section-title ff-secondary text-center text-primary fw-normal">Excellence Airport</h5>
+              
+              <AutoPlayVideo src="directorairport.mp4" />
+              </div>
+              </div>
+              </div>
 
                 {/* <div className="container-xxl pt-5 pb-3">
                     <div className="container">

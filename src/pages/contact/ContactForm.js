@@ -54,7 +54,7 @@ function ContactForm() {
                                     </div>
                                     <div className="col-md-4">
                                         <h5 className="section-title ff-secondary fw-normal text-start text-primary">{t('General')}</h5>
-                                        <p><i className="fa fa-envelope-open text-primary me-2"></i>contact@excellenceairport.fr</p>
+                                        <p><i className="fa fa-envelope-open text-primary me-2"></i>Raoya.belhia@excellenceairport.fr</p>
                                     </div>
                                     <div className="col-md-4">
                                         <h5 className="section-title ff-secondary fw-normal text-start text-primary">{t('Technical')}</h5>

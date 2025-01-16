@@ -28,7 +28,7 @@ const Navbar = () => {
                             `nav-item nav-link ${isActive ? 'active' : ''}`
                         }
                     >
-                       {t('Home')}
+                        {t('Home')}
                     </NavLink>
 
                     <div className="nav-item dropdown">
@@ -98,7 +98,7 @@ const Navbar = () => {
                         </a>
                         <div className="dropdown-menu m-0">
 
-                        <NavLink
+                            <NavLink
                                 to="/companyhistory"
                                 className="dropdown-item"
                             >
@@ -108,15 +108,15 @@ const Navbar = () => {
                                 to="/values"
                                 className="dropdown-item"
                             >
-                               {t('Values&MissionStatements')}
+                                {t('Values&MissionStatements')}
                             </NavLink>
-                           
-                            
+
+
                             <NavLink
                                 to="/terms"
                                 className="dropdown-item"
                             >
-                               {t('Terms&Policies')}
+                                {t('Terms&Policies')}
                             </NavLink>
                         </div>
                     </div>
@@ -148,16 +148,25 @@ const Navbar = () => {
                     </div>
 
                     <div className="nav-item dropdown">
-                        <a
+                        {/* <a
                             href="#"
                             className="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
                         >
                             {t('UserAccount')}
+                        </a> */}
+
+                        <a
+                            href="#"
+                            className="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                        >
+                            <i className="fas fa-user"></i>
+                            {/* <span className="ms-2">{t('User Account')}</span> */}
                         </a>
 
                         <div className="dropdown-menu m-0">
-                        <NavLink
+                            <NavLink
                                 to="/profile"
                                 className="dropdown-item"
                             >
@@ -178,16 +187,16 @@ const Navbar = () => {
 
                         </div>
                     </div>
-                   
+
                 </div>
                 <NavLink to="/contactform" className="btn btn-primary py-2 px-4">
                     {t('BookAService')}
                 </NavLink>
 
-                
+
             </div>
             <div className='d-none d-lg-block px-2' >
-            <Languages />
+                <Languages />
             </div>
         </nav>
     );

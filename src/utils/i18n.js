@@ -11,7 +11,7 @@ const resources = {
     translation: {
 
       // NavBar //
-      "BookAService": "Book Service",
+      "BookAService": "Book A Service",
       "ExcellenceAirport": "Excellence Airport",
       "Home": "Home",
       "Services": "Services",
@@ -103,7 +103,7 @@ const resources = {
       "ChauffeurService": "Chauffeur Service",
       "ChauffeurServiceDesc": "Chauffeur service to the aircraft if it is on a remote stand.",
       "Meett": "Meet",
-      "MeettDesc": "Agents meet passengers with a name board at the airbridge or terminal.",
+      "MeettDesc": "Agents meet passengers with a name board at the airbridge.",
       "BoardingGate": "Boarding gate",
       "BoardingGateDesc":"Passengers are escorted to the departure lounge, if arranged, and then directly to the boarding gate.",
       "Assist": "Assist",
@@ -116,8 +116,8 @@ const resources = {
       "ChauffeurrServiceDesc": "Chauffeur service from the aircraft to the VIP terminal for a relaxing layover.",
       "ChauffeurTransport": "Chauffeur transport",
       "ChauffeurTransportDesc": "Chauffeur transport back to the aircraft for the next leg of the journey.",
-      "AssistanceWithLuggage": "Assistance with luggage",
-      "AssistanceWithLuggageDesc": "Assistance with luggage and airport formalities.",
+      "AssistanceWithLuggage": "Assistance with carry-on",
+      "AssistanceWithLuggageDesc": "Assistance with carry-on like handbags and light carryall.",
       "BookAServiceOnline": "Book A Service Online",
       "YourName": "Your Name",
       "YourEmail": "Your Email",
@@ -138,7 +138,7 @@ const resources = {
 
 
       "CompanyHistory": "Company History",
-      "WelcomeToAbout1": "At Excellence Airport, we specialize in transforming the chaos of travel into a seamless and luxurious experience. Strategically located at Roissy Charles de Gaulle Airport, our services cater to discerning travelers who value privacy, efficiency, and personalized care. From business executives to leisure travelers, we ensure every journey begins and ends with ease.",
+      "WelcomeToAbout1": "At Excellence Airport, we specialize in transforming the chaos of travel into a seamless and luxurious experience. Located at various airports our VIP Meet and Greet services are provided at, Roissy Charles de Gaulle Airport, CDG, ORY, NCE, LYS, BOD, MRS, TLS,  MPL, LHR, TLV, airports. Our services cater to discerning travelers who value privacy, efficiency, and personalized care. From business executives to leisure travelers, we ensure every journey begins and ends with ease.",
       "WelcomeToAbout2": "Founded by Benjamin Slama, Excellence Airport has grown over 15 years to become synonymous with VIP airport services.Our multilingual team, fluent in French, English, and Spanish, is dedicatedto anticipating your needs and exceeding expectations, providing unmatched care and attention every step of the way.",
       "Excellence": "Excellence",
       "Luxury": "Luxury",
@@ -218,7 +218,7 @@ const resources = {
       "EmailDesc2": "Our dedicated team responds promptly to address your needs.",
       "Phone": "Phone",
       "PhoneDesc1": "Need immediate assistance or wish to discuss a service in detail? Reach us directly at",
-      "PhoneDesc2": "Our representatives are ready to assist you with any query.",
+      "PhoneDesc2": " Our representatives are ready to assist you with any query.",
       "PhysicalAddress": "Physical Address",
       "PhysicalAddressDesc1": "Visit or correspond with us at our headquarters",
       "PhysicalAddressDesc2": "This is the hub of our operations, where we coordinate our premium services for clients worldwide.",
@@ -228,6 +228,7 @@ const resources = {
       "HostingProvider": "HostingProvider",
       "HostingProviderDesc1": "Excellence Airport's website and online services are hosted by",
       "HostingProviderDesc2": "a reliable hosting provider ensuring robust performance, security, and accessibility for our digital platforms.",
+      "or": "or",
 
 
 
@@ -248,6 +249,7 @@ const resources = {
       "FirstCategory": "First Category",
       "SecondCategory": "SecondCategory",
       "ThirdCategory": "Third Category",
+      
 
 
 
@@ -279,11 +281,15 @@ const resources = {
                   Excellence Airport Chauffeur-Driven Transfers redefine what it means to travel on the ground. They are more than a service they are an experience
                   that blends practicality with sophistication, turning every journey into a seamless chapter of your travel story. `,
 
+      
+      "LetsTakeARide": "Let's take a ride", 
       "ExploreOurChauffeurDrivenFeatures": "Explore Our Chauffeur Driven Features",
       "ExploreAvailableFleetNow": "Explore our available fleet cars for the time being.",
       "ExploreVarietyCarModels.": "Explore our variety of fleet car models.",
 
       //////Services  /////Meet&Greet
+
+      
 
       "AirportMeet&Greet": "Airport Meet & Greet",
       "AirportMeet&GreetDesc": `Imagine stepping into the bustling world of an international airport, where the hum of activity can feel overwhelming. But instead of being swept into the chaos, you're greeted with a warm smile and the promise of effortless travel. This is the essence of the Excellence Airport Meet & Greet service a sanctuary of ease, comfort, and luxury amidst the complexities of modern air travel.
@@ -295,6 +301,10 @@ const resources = {
                   The journey doesnt end at the gate. Whether you're departing, arriving, or simply passing through, the Meet & Greet service is tailored to your every need, ensuring that no detail is overlooked. It is not just about getting to your destination, it is about how you feel along the way: relaxed, cared for, and completely at ease.
 
                   With Excellence Airport Meet & Greet, air travel transforms from a logistical challenge into a luxurious experience, where every moment is designed to leave you feeling like a priority. It is not just a service; it is a story of effortless journeys and unforgettable care. `,
+
+      "DearCustomer": "Dear Customer",
+      
+      "WelcomeAbroad": "Welcome Abroad",
 
       "ExploreOurMeet&GreetServices": "Explore Our Meet & Greet Services",
 
@@ -446,7 +456,7 @@ const resources = {
 
       ///////////////////////////////////
       "Meett": "Rencontrer",
-      "MeettDesc": "Les agents rencontrent les passagers à l'aide d'un panneau nominatif au passerelle aérienne ou au terminal.",
+      "MeettDesc": "Les agents rencontrent les passagers à l'aide d'un panneau nominatif au passerelle aérienne.",
       "Assist": "Assister",
       "AssistDesc": "Une assistance est proposée pour la récupération des bagages, si nécessaire, et des services de portage, s'ils ont été réservés à l'avance.",
       "FastTrackk": "Voie rapide",
@@ -457,8 +467,8 @@ const resources = {
       "ChauffeurrServiceDesc": "Service de chauffeur de l'avion au terminal VIP pour une escale relaxante.",
       "ChauffeurTransport": "Transport avec chauffeur",
       "ChauffeurTransportDesc": "Transport par chauffeur jusqu'à l'avion pour la suite du voyage.",
-      "AssistanceWithLuggage": "Assistance pour les bagages",
-      "AssistanceWithLuggageDesc": "Assistance pour les bagages et les formalités aéroportuaires.",
+      "AssistanceWithLuggage": "Assistance pour les bagages à main",
+      "AssistanceWithLuggageDesc": "ssistance pour les bagages à main et les sacs à main légers.",
       "BookAServiceOnline": "Réserver un service en ligne",
       "YourName": "Votre Nom",
       "YourEmail": "Votre Email",
@@ -476,7 +486,7 @@ const resources = {
       ////About //Company
 
       "CompanyHistory": "Company History",
-      "WelcomeToAbout1": "A l'Excellence Airport, nous sommes spécialisés dans la transformation du voyage chaotique en une expérience fluide et luxueuse. Située stratégiquement à l'aéroport Roissy Charles de Gaulle, nos services s'adressent à des voyageurs exigeants qui apprécient l'intimité, l'efficacité et les soins personnalisés. Qu'il s'agisse de cadres d'entreprise ou de voyageurs d'agrément, nous garantissons que chaque voyage commence et se termine en toute simplicité.",
+      "WelcomeToAbout1": "A l'Excellence Airport, nous sommes spécialisés dans la transformation du voyage chaotique en une expérience fluide et luxueuse. Situés dans différents aéroports, nos services d'accueil VIP sont fournis à les aéroportes Roissy Charles de Gaulle, CDG, ORY, NCE, LYS, BOD, MRS, TLS, MPL, LHR, TLV. Nos services s'adressent à des voyageurs exigeants qui apprécient l'intimité, l'efficacité et les soins personnalisés. Qu'il s'agisse de cadres d'entreprise ou de voyageurs d'agrément, nous garantissons que chaque voyage commence et se termine en toute simplicité.",
       "WelcomeToAbout2": "Fondée par Benjamin Slama, Excellence Airport s'est développée depuis 15 ans pour devenir le symbole des services aéroportuaires VIP. Notre équipe multilingue, qui parle couramment le français, l'anglais et l'espagnol, se consacre à anticiper vos besoins et à dépasser vos attentes, en vous offrant une attention et un soin inégalés à chaque étape du processus.",
       "Excellence": "Excellence",
       "Luxury": "De luxe",
@@ -537,6 +547,7 @@ const resources = {
       "SendMessage": "Envoyer un message",
       "Subject": "Sujet",
       "Message": "Message",
+      "or" : "ou",
 
 
 
@@ -551,7 +562,7 @@ const resources = {
       "EmailDesc2": "Notre équipe dévouée répond rapidement à vos besoins.",
       "Phone": "Téléphone",
       "PhoneDesc1": "Vous avez besoin d'une assistance immédiate ou souhaitez discuter d'un service en détail ? Contactez-nous directement à l'adresse suivante",
-      "PhoneDesc2": "Nos représentants sont prêts à vous assister pour toutes vos questions.",
+      "PhoneDesc2": " Nos représentants sont prêts à vous assister pour toutes vos questions.",
       "PhysicalAddress": "Adresse physique",
       "PhysicalAddressDesc1": "Nous rendre visite ou échanger avec nous au siège de l'entreprise",
       "PhysicalAddressDesc2": "Ici, Nous coordonnons nos services haut de gamme pour des clients du monde entier.",
@@ -611,6 +622,8 @@ const resources = {
             Les transferts avec chauffeur service de l'aéroport Excellence redéfinissent ce que signifie voyager . Plus qu'un service, c'est une expérience qui allie la pratique à la perfection,
              transformant chaque trajet en un chapitre sans faille de votre histoire de voyage.`,
 
+      
+      "LetsTakeARide": "Allons-y faire un tour",
       "ExploreOurChauffeurDrivenFeatures": "Découvrez nos services de transport avec chauffeur",
       "ExploreAvailableFleetNow": "Explorez notre flotte de voitures disponibles pour le moment.",
       "ExploreVarietyCarModels.": "Découvrez notre variété de modèles de voitures de flotte.",
@@ -628,6 +641,10 @@ const resources = {
             
             Avec Excellence Airport Meet & Greet, le voyage aérien passe d'un défi logistique à une expérience luxueuse, où chaque instant est conçu pour que vous vous sentiez comme une priorité. Ce n'est pas seulement un service, c'est l'histoire d'un voyage sans effort et d'une prise en charge inoubliable. `,
 
+      "DearCustomer": "Cher client",
+      
+      "WelcomeAbroad": "Bienvenue",
+      
       "ExploreOurMeet&GreetServices": "Découvrez nos services de Meet & Greet",
 
       //////Services  /////VIPTerminal

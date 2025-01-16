@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useRef, useEffect} from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import { useTranslation } from 'react-i18next';
+import AutoPlayVideo from '../../utils/AutoPlayVideo';
+
+
 
 function MeetGreet() {
   const { t } = useTranslation();
+  const videoRef = useRef(null);
   return (
     <div>
       <div className="container-xxl bg-white p-0">
@@ -61,6 +65,35 @@ function MeetGreet() {
             </div>
           </div>
         </div>
+
+
+        {/* <div className="container-xxl pt-5 pb-3">
+          <div className="container">
+            <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+              <h5 className="section-title ff-sescondary text-center text-primary fw-normal">{t('TeamMembers')}</h5>
+              <h1 className="mb-5">{t('OurDrivers')}</h1>
+            </div>
+
+            <video src="meet&greet.mp4" controls />
+
+          </div>
+        </div> */}
+
+<div className="container-l pt-2 pb-3">
+    <div className="container">
+        <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 className="section-title ff-secondary text-center text-primary fw-normal">{t('DearCustomer')}</h5>
+            <h1 className="mb-5">{t('WelcomeAbroad')}</h1>
+        </div>
+
+        {/* <div className="video-container">
+            <video src="director1.mp4" controls className="video-responsive" />
+        </div> */}
+        <AutoPlayVideo src="director1.mp4" />
+    </div>
+</div>
+
+
 
 
         <div className="container-xxl py-5">

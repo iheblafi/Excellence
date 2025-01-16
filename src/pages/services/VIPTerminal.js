@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import { useTranslation } from 'react-i18next';
+import AutoPlayVideo from '../../utils/AutoPlayVideo';
 
 function VIPTerminal() {
   const { t } = useTranslation();
@@ -62,6 +63,16 @@ function VIPTerminal() {
           </div>
         </div>
 
+        <div className="container-l pt-2 pb-3">
+          <div className="container">
+            <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+              <h5 className="section-title ff-secondary text-center text-primary fw-normal">{t('LetsTakeARide')}</h5>
+              
+              <AutoPlayVideo src="directorfleet.mp4" />
+              </div>
+              </div>
+              </div>
+
 
         <div className="container-xxl py-5">
           <div className="container">
@@ -100,7 +111,7 @@ function VIPTerminal() {
                 <div id="tab-1" className="tab-pane fade show p-0 active">
                   <div className="row g-4">
 
-                    <div className="col-lg-6">
+                    {/* <div className="col-lg-6">
                       <div className="d-flex align-items-center">
                         <img className="flex-shrink-0 img-fluid rounded" src="img/vipterminal.jpg" alt="" style={{ width: '80px' }} />
                         <div className="w-100 d-flex flex-column text-start ps-4">
@@ -110,7 +121,7 @@ function VIPTerminal() {
                           <small className="fst-italic">{t('TransportToVIPTerminalDesc')}</small>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
 
                     <div className="col-lg-6">
                       <div className="d-flex align-items-center">
@@ -217,7 +228,7 @@ function VIPTerminal() {
                           <h5 className="d-flex justify-content-between border-bottom pb-2">
                             <span>{t('ChauffeurrService')}</span>
                           </h5>
-                          <small className="fst-italic">{t('ChauffeurrServiceDescs')}</small>
+                          <small className="fst-italic">{t('ChauffeurrServiceDesc')}</small>
                         </div>
                       </div>
                     </div>

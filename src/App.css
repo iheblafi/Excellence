@@ -57,3 +57,14 @@
     min-width: 100px; /* Wider dropdown for larger screens */
   }
 }
+
+.video-container {
+  width: 100%; /* Full width of the container */
+  overflow: hidden; /* Prevent overflow if needed */
+}
+
+.video-responsive {
+  width: 100%; /* Full width */
+  height: 30rem; /* Set a specific height */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+}

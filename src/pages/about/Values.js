@@ -26,7 +26,7 @@ function Values() {
 
                     <div class="container-xxl py-5 bg-dark hero-header mb-5">
                         <div class="container text-center my-5 pt-5 pb-4">
-                            <h1 class="display-3 text-white mb-3 animated slideInDown">{('Values&MissionStatements')}</h1>
+                            <h1 class="display-3 text-white mb-3 animated slideInDown">{t('Values&MissionStatements')}</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center text-uppercase">
                                     <li class="breadcrumb-item"><a href="#">{('Home')}</a></li>
@@ -79,7 +79,7 @@ function Values() {
                             </div>
 
                             <div className="col-lg-12" style={{ textAlign: 'center', alignItems: 'center', justifyContent: 'center' }}>
-                            <h5 className="section-title ff-secondary  text-primary fw-normal">{t('Motto')}</h5>
+                            <h5 className="section-title ff-secondary  text-primary fw-normal" >{t('Motto')}</h5>
 
                             </div>
 

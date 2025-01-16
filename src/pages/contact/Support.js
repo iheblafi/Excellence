@@ -60,15 +60,15 @@ function Support() {
                                 </p>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
                                     <strong>Email:</strong> {t('EmailDesc1')}
-                                    <a href="mailto:contact@excellenceairport.fr"> contact@excellenceairport.fr </a>. {t('EmailDesc2')}
+                                    <a href="mailto:contact@excellenceairport.fr"> contact@excellenceairport.fr</a>. {t('EmailDesc2')}
                                 </p>
 
                             </div>
                             <div className="col-lg-12">
 
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                                    <strong>{t('Phone')}:</strong> {t('PhoneDesc1')} <a href="tel:+33699268175">+33 6 99 26 81 75</a>.
-                                    {t('PhoneDesc2')}
+                                    <strong>{t('Phone')}:</strong> {t('PhoneDesc1')} <a href="tel:+33699268175">+33699268175</a> {t('or')} <a href="tel:+33699268175">+33781780229</a>. 
+                                       {t('PhoneDesc2')}
                                 </p>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
                                     <strong>{t('PhysicalAddress')}:</strong> {t('PhysicalAddressDesc1')}:

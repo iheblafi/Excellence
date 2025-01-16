@@ -3,6 +3,7 @@ import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
+import AutoPlayVideo from '../../utils/AutoPlayVideo';
 
 function Chauffeur() {
   const { t } = useTranslation();
@@ -62,6 +63,9 @@ function Chauffeur() {
             </div>
           </div>
         </div>
+
+        
+       
 
 
         <div className="container-xxl py-5">
