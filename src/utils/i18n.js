@@ -126,7 +126,9 @@ const resources = {
       "People2": "People 2",
       "People3": "People 3",
       "NoOfPeople": "No Of People",
+      "FlightDetails": "Flight Details",
       "SpecialRequest": "Special Request",
+
       "BookNow": "Book Now",
       "TeamMembers": "Team Members",
       "OurDrivers": "Our Drivers",
@@ -336,6 +338,16 @@ const resources = {
       "ExploreOurVIPTerminalServices": "Explore Our VIP Terminal Services",
 
 
+      "YourName": "Your Name",
+      "Welcome Back, Traveler": "",
+      "YourEmail": "",
+      "Password": "",
+      "ConfirmPassword": "",
+      "Select": "",
+      "Phone Number": "",
+      "Cancel": "",
+
+
 
     },
   },
@@ -477,6 +489,7 @@ const resources = {
       "People2": "Personne 2",
       "People3": "Personne 3",
       "NoOfPeople": "No De Personne",
+      "FlightDetails": "Détailles de vols",
       "SpecialRequest": "Demande spéciale",
       "BookNow": "Réserver Maintenant",
       "TeamMembers": "Membres de l'équipe",

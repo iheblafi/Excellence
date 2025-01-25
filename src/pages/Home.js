@@ -468,7 +468,13 @@ function Home() {
                                                 <label for="select1">{t('NoOfPeople')}</label>
                                             </div>
                                         </div>
-                                        <div className="col-12">
+                                        <div className="col-md-6">
+                                            <div className="form-floating date" id="date3" data-target-input="nearest">
+                                                <input type="text" className="form-control detailflight-input" id="detailflight" placeholder="Flight details" data-target="#date3" data-toggle="detailflight" />
+                                                <label for="detailflight">{t('FlightDetails')}</label>
+                                            </div>
+                                        </div>
+                                        <div className="col-6">
                                             <div className="form-floating">
                                                 <textarea className="form-control" placeholder="Special Request" id="message" ></textarea>
                                                 <label for="message">{t('SpecialRequest')}</label>

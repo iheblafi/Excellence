@@ -68,3 +68,13 @@
   height: 30rem; /* Set a specific height */
   object-fit: cover; /* Maintain aspect ratio and cover the area */
 }
+
+.input-group-text {
+  background-color: transparent; /* Match the input background */
+  border-left: none; /* Remove left border for seamless integration */
+  padding: 0.375rem 0.75rem; /* Adjust padding */
+}
+
+.input-group-text i {
+  font-size: 1rem; /* Adjust icon size */
+}

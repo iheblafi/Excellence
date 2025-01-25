@@ -1,10 +1,19 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import Languages from '../utils/Languages';
 
 const Navbar = () => {
     const { t } = useTranslation();
+    const { isAuthenticated, logout } = useNavigate();  //useAuth(); // Custom hook for auth status
+    const navigate = useNavigate();
+
+    const handleUserClick = () => {
+        if (!isAuthenticated) {
+            navigate('/login'); // Redirect to login if not authenticated
+        }
+    };
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-4 py-3 py-lg-0">
             <NavLink to="/" className="navbar-brand p-2">
@@ -156,16 +165,17 @@ const Navbar = () => {
                             {t('UserAccount')}
                         </a> */}
 
-                        <a
+                        {/* <a
                             href="#"
                             className="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
                         >
-                            <i className="fas fa-user"></i>
-                            {/* <span className="ms-2">{t('User Account')}</span> */}
-                        </a>
+                            <i className="fas fa-user"></i> */}
+                        {/* <span className="ms-2">{t('User Account')}</span> */}
+                        {/* </a> */}
 
-                        <div className="dropdown-menu m-0">
+
+                        {/* <div className="dropdown-menu m-0">
                             <NavLink
                                 to="/profile"
                                 className="dropdown-item"
@@ -185,7 +195,50 @@ const Navbar = () => {
                                 {t('PaymentMethods')}
                             </NavLink>
 
-                        </div>
+                       ss </div> */}
+
+                        <a
+                            href="#"
+                            className={`nav-link ${isAuthenticated ? 'dropdown-toggle' : ''}`}
+                            data-bs-toggle={isAuthenticated ? 'dropdown' : ''}
+                            onClick={handleUserClick}
+                        >
+                            <i className="fas fa-user"></i>
+                            {isAuthenticated && <span className="ms-2">{t('UserAccount')}</span>}
+                        </a>
+
+
+                        {isAuthenticated && (
+                            <div className="dropdown-menu m-0">
+                                <NavLink
+                                    to="/profile"
+                                    className="dropdown-item"
+                                >
+                                    {t('Profile')}
+                                </NavLink>
+                                <NavLink
+                                    to="/bookinghistory"
+                                    className="dropdown-item"
+                                >
+                                    {t('BookingHistory')}
+                                </NavLink>
+                                <NavLink
+                                    to="/payment"
+                                    className="dropdown-item"
+                                >
+                                    {t('PaymentMethods')}
+                                </NavLink>
+                                <button
+                                    className="dropdown-item text-danger"
+                                    onClick={() => {
+                                        logout(); // Call logout function
+                                        navigate('/'); // Redirect after logout
+                                    }}
+                                >
+                                    {t('Logout')}
+                                </button>
+                            </div>
+                        )}
                     </div>
 
                 </div>

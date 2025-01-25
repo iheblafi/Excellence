@@ -24,6 +24,7 @@ import PaymentMethods from './pages/profile/PaymentMethods';
 import Support from './pages/contact/Support';
 
 import './utils/i18n';
+import Login from './pages/auth/Login';
 
 
 function App() {
@@ -56,6 +57,11 @@ function App() {
           <Route path="/profile" element={<ProfileManagement />} />
           <Route path="/bookinghistory" element={<BookingHistory />} />
           <Route path="/payment" element={<PaymentMethods />} />
+
+          {/*-------------------Auth----------------------------*/}
+          <Route path="/login" element={<Login />} />
+        
+        
   
 
           <Route path="/about" element={<About />} />
