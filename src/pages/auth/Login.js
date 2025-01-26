@@ -10,7 +10,7 @@ function Login() {
 	const [isSignIn, setIsSignIn] = useState(true);
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
-	const [phone, setPhone] = useState('');
+	const [phoneNumber, setPhoneNumber] = useState('');
 	const [password, setPassword] = useState('');
 	const [confirmPassword, setConfirmPassword] = useState('');
 	const [alert, setAlert] = useState({ show: false, type: '', message: '' });
@@ -39,6 +39,7 @@ function Login() {
 
 			setTimeout(() => {
 				navigate("/");
+				window.location.reload();
 			}, 2000);
 
 		} catch (err) {
@@ -53,11 +54,12 @@ function Login() {
 			return;
 		}
 		try {
-			const user = await register({ name, email, password }).unwrap();
+			const user = await register({ name, email, password, phoneNumber }).unwrap();
 			dispatch(setCredentials(user));
 			setAlert({ show: true, type: 'success', message: 'Registration successful! Redirecting to role selection.' });
 			setTimeout(() => {
 				navigate("/");
+				window.location.reload();
 			}, 2000);
 
 
@@ -133,9 +135,9 @@ function Login() {
 											/>
 											<label htmlFor="email">Your Email</label>
 										</div>
-										<div className="form-floating  col-6 mb-3">
+										<div className="form-floating  col-6 ">
 											<input
-												type="password"
+												type={showPassword ? "text" : "password"}
 												className="form-control"
 												id="password"
 												placeholder="Password"
@@ -143,8 +145,8 @@ function Login() {
 												onChange={(e) => setPassword(e.target.value)}
 												required
 											/>
-											<span className="input-group-text" onClick={togglePasswordVisibility} style={{ cursor: 'pointer' }}>
-												<i className={showPassword ? "fas fa-eye" : "fas fa-eye-slash"} aria-hidden="true"></i>
+											<span className="input-group-text" onClick={togglePasswordVisibility} style={{ border: '1px solid transparent' }}>
+												<i className={showPassword ? "fas fa-eye" : "fas fa-eye-slash"} aria-hidden="true" style={{ cursor: 'pointer', position: 'absolute', right: '11px', top: '22px' }}></i>
 											</span>
 											<label htmlFor="password">Password</label>
 											{/* <div className="input-group">
@@ -168,9 +170,9 @@ function Login() {
 											</div> */}
 										</div>
 										{!isSignIn && (
-											<div className="form-floating mb-3 col-6">
+											<div className="form-floating  col-6">
 												<input
-													type="password"
+													type={showConfirmPassword ? "text" : "password"}
 													className="form-control"
 													id="confirmPassword"
 													placeholder="Confirm Password"
@@ -181,54 +183,51 @@ function Login() {
 												<span
 													className="input-group-text"
 													onClick={toggleConfirmPasswordVisibility}
-													style={{ cursor: 'pointer' }}>
-													<i className={showConfirmPassword ? "icon-eye" : "icon-eye-off"} aria-hidden="true"></i>
+													style={{ border: '1px solid transparent' }}>
+													<i className={showConfirmPassword ? "fas fa-eye" : "fas fa-eye-slash"} aria-hidden="true" style={{ cursor: 'pointer', position: 'absolute', right: '11px', top: '22px' }}></i>
 												</span>
 												<label htmlFor="confirmPassword">Confirm Password</label>
 											</div>
 										)}
 										{!isSignIn && (
-											<div className="row g-3 align-items-center mb-4">
-												<div className="col-md-4">
-													<div className='form-floating'>
-														<select
-															className="form-select"
-															id="countryCode"
+											<div className='form-floating mb-3 col-md-4 '>
+												<select
+													className="form-select"
+													id="countryCode"
+													//S	style={{ marginRight: '10px' }}
+													required
+													onChange={(e) => setCountryCode(e.target.value)}
+												>
+													<option value="" disabled selected>
+														Select
+													</option>
 
-															required
-															onChange={(e) => setCountryCode(e.target.value)}
-														>
-															<option value="" disabled selected>
-																Select
-															</option>
+													<option value="+216">+216 (Tunisia)</option>
+													<option value="+33">+33 (France)</option>
+													<option value="+1">+1 (USA)</option>
+													<option value="+44">+44 (UK)</option>
+													<option value="+91">+91 (India)</option>
+													{/* Add more country codes as needed */}
+												</select>
+												<label htmlFor="countryCode" className="form-label">
+													Code
+												</label>
+											</div>
+										)}
 
-															<option value="+216">+216 (Tunisia)</option>
-															<option value="+33">+33 (France)</option>
-															<option value="+1">+1 (USA)</option>
-															<option value="+44">+44 (UK)</option>
-															<option value="+91">+91 (India)</option>
-															{/* Add more country codes as needed */}
-														</select>
-														<label htmlFor="countryCode" className="form-label">
-															Code
-														</label>
-													</div>
-												</div>
+										{!isSignIn && (
 
-												<div className="col-md-8">
-													<div className="form-floating">
-														<input
-															type="phone"
-															className="form-control"
-															id="phone"
-															placeholder="Phone Number"
-															value={phone}
-															onChange={(e) => setPhone(e.target.value)}
-															required
-														/>
-														<label htmlFor="phone">Phone Number</label>
-													</div>
-												</div>
+											<div className="form-floating mb-3 col-md-8">
+												<input
+													type="tel"
+													className="form-control"
+													id="phoneNumber"
+													placeholder="Phone Number"
+													value={phoneNumber}
+													onChange={(e) => setPhoneNumber(e.target.value)}
+													required
+												/>
+												<label htmlFor="phoneNumber">Phone Number</label>
 											</div>
 										)}
 										<div className="d-flex justify-content-center gap-2">

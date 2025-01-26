@@ -19,7 +19,6 @@ function Home() {
                 </div>
 
                 <div className="container-xxl position-relative p-0">
-                    <Navbar />
 
                     <div className="container-xxl py-5 bg-dark hero-header mb-5">
                         <div className="container my-5 py-5">

@@ -1,21 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink, useNavigate } from 'react-router-dom';
 import Languages from '../utils/Languages';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
     const { t } = useTranslation();
-    const { isAuthenticated, logout } = useNavigate();  //useAuth(); // Custom hook for auth status
+   // const { isAuthenticated, logout } = useNavigate();  //useAuth(); // Custom hook for auth status
     const navigate = useNavigate();
+    const [isAuthenticated, setIsAuthenticated] = useState (true);
+    const userName = useSelector((state) => state.auth.user?.name);
+    console.log( userName);
 
-    const handleUserClick = () => {
+    console.log('isAuthenticated:', isAuthenticated);
+    const logout = () => {
+        setIsAuthenticated(false);
+        navigate('/');
+        // Perform any additional logout logic (e.g., clearing tokens)
+    };
+
+    const handleUserClick = (e) => {
         if (!isAuthenticated) {
-            navigate('/login'); // Redirect to login if not authenticated
+            e.preventDefault();
+            navigate('/login');
+        } else {
+            e.stopPropagation(); // Prevent event bubbling if needed
         }
     };
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-4 py-3 py-lg-0">
+        <div className="container-xxl position-relative p-0">
+
+        <nav  className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-4 py-3 py-lg-0">
             <NavLink to="/" className="navbar-brand p-2">
                 <h1 className="text-primary m-0">
                     <i className="fa fa-plane me-1"></i>Excellence Airport
@@ -204,8 +220,9 @@ const Navbar = () => {
                             onClick={handleUserClick}
                         >
                             <i className="fas fa-user"></i>
-                            {isAuthenticated && <span className="ms-2">{t('UserAccount')}</span>}
-                        </a>
+                            {isAuthenticated && (
+                        <span className="ms-2">{userName }</span>
+                    )}                        </a>
 
 
                         {isAuthenticated && (
@@ -232,7 +249,6 @@ const Navbar = () => {
                                     className="dropdown-item text-danger"
                                     onClick={() => {
                                         logout(); // Call logout function
-                                        navigate('/'); // Redirect after logout
                                     }}
                                 >
                                     {t('Logout')}
@@ -252,6 +268,7 @@ const Navbar = () => {
                 <Languages />
             </div>
         </nav>
+        </div>
     );
 };
 

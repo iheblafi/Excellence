@@ -25,13 +25,22 @@ import Support from './pages/contact/Support';
 
 import './utils/i18n';
 import Login from './pages/auth/Login';
+import Navbar from './components/Navbar';
+import { useState } from 'react';
 
 
-function App() {
+const  App = ()  => {
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    localStorage.getItem('isAuthenticated') === 'true'
+);
+
 
   return (
     <div className="App">
+      
       <BrowserRouter basename={document.baseURI.substring(document.baseURI.indexOf(window.location.origin) + window.location.origin.length, document.baseURI.lastIndexOf('/'))}>
+      <Navbar isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
+
         <Routes>
           <Route path="/" element={<Home />} />
           {/*-------------------Services------------------- */}
