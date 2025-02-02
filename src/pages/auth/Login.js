@@ -5,8 +5,10 @@ import Languages from '../../utils/Languages';
 import { useDispatch } from 'react-redux';
 import { useLoginMutation, useRegisterMutation } from '../../slices/userApiSlice';
 import { setCredentials } from '../../slices/authSlice';
+import { useTranslation } from 'react-i18next';
 
 function Login() {
+	const { t } = useTranslation();
 	const [isSignIn, setIsSignIn] = useState(true);
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
@@ -81,7 +83,7 @@ function Login() {
 			</div>
 
 			<div className="container-xxl position-relative p-0">
-				<nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-4 py-3 py-lg-0">
+				{/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-4 py-3 py-lg-0">
 					<NavLink to="/" className="navbar-brand p-2">
 						<h1 className="text-primary m-0">
 							<i className="fa fa-plane me-1"></i>Excellence Airport
@@ -90,7 +92,7 @@ function Login() {
 					<div className="d-none d-lg-block px-2">
 						<Languages />
 					</div>
-				</nav>
+				</nav> */}
 
 				<div className="container-xxl py-5 bg-dark hero-header mb-5">
 					<div className="container my-5 py-5">
@@ -98,10 +100,10 @@ function Login() {
 							<div className="col-md-6 bg-dark d-flex align-items-center">
 								<div className="p-5 wow fadeInUp" data-wow-delay="0.2s">
 									<h5 className="section-title ff-secondary text-start text-primary fw-normal">
-										{isSignIn ? 'Sign In' : 'Sign Up'}
+										{isSignIn ? t('SignIn') : t('SignUp')}
 									</h5>
 									<h1 className="text-white mb-4">
-										{isSignIn ? 'Welcome Back, Traveler' : 'Create an Account, Traveler'}
+										{isSignIn ? t('WelcomeBackTraveler') : t('CreateAccount')}
 									</h1>
 									{alert.show && (
 										<div className={`alert alert-${alert.type}`} role="alert">
@@ -115,12 +117,12 @@ function Login() {
 													type="text"
 													className="form-control"
 													id="name"
-													placeholder="Your Name"
+													placeholder={t('YourName')}
 													value={name}
 													onChange={(e) => setName(e.target.value)}
 													required
 												/>
-												<label htmlFor="name">Your Name</label>
+												<label htmlFor="name">{t('YourName')}</label>
 											</div>
 										)}
 										<div className="form-floating col-6 mb-3">
@@ -128,27 +130,31 @@ function Login() {
 												type="email"
 												className="form-control"
 												id="email"
-												placeholder="Your Email"
+												placeholder={t('YourEmail')}
 												value={email}
 												onChange={(e) => setEmail(e.target.value)}
 												required
 											/>
-											<label htmlFor="email">Your Email</label>
+											<label htmlFor="email">{t('YourEmail')}</label>
 										</div>
 										<div className="form-floating  col-6 ">
 											<input
 												type={showPassword ? "text" : "password"}
 												className="form-control"
 												id="password"
-												placeholder="Password"
+												placeholder={t('Password')}
 												value={password}
 												onChange={(e) => setPassword(e.target.value)}
 												required
 											/>
-											<span className="input-group-text" onClick={togglePasswordVisibility} style={{ border: '1px solid transparent' }}>
+											<span className="input-group-text" onClick={togglePasswordVisibility} 
+											style={{ 
+												backgroundColor: 'transparent', 
+												border: 'none' 
+											}}>
 												<i className={showPassword ? "fas fa-eye" : "fas fa-eye-slash"} aria-hidden="true" style={{ cursor: 'pointer', position: 'absolute', right: '11px', top: '22px' }}></i>
 											</span>
-											<label htmlFor="password">Password</label>
+											<label htmlFor="password">{t('Password')}</label>
 											{/* <div className="input-group">
 												<input
 													type={showPassword ? "text" : "password"} // Toggle input type
@@ -175,7 +181,7 @@ function Login() {
 													type={showConfirmPassword ? "text" : "password"}
 													className="form-control"
 													id="confirmPassword"
-													placeholder="Confirm Password"
+													placeholder={t('ConfirmPassword')}
 													value={confirmPassword}
 													onChange={(e) => setConfirmPassword(e.target.value)}
 													required
@@ -183,10 +189,13 @@ function Login() {
 												<span
 													className="input-group-text"
 													onClick={toggleConfirmPasswordVisibility}
-													style={{ border: '1px solid transparent' }}>
+													style={{ 
+														backgroundColor: 'transparent', 
+														border: 'none' 
+													}}>
 													<i className={showConfirmPassword ? "fas fa-eye" : "fas fa-eye-slash"} aria-hidden="true" style={{ cursor: 'pointer', position: 'absolute', right: '11px', top: '22px' }}></i>
 												</span>
-												<label htmlFor="confirmPassword">Confirm Password</label>
+												<label htmlFor="confirmPassword">{t('ConfirmPassword')}</label>
 											</div>
 										)}
 										{!isSignIn && (
@@ -199,7 +208,7 @@ function Login() {
 													onChange={(e) => setCountryCode(e.target.value)}
 												>
 													<option value="" disabled selected>
-														Select
+													{t('Select')}
 													</option>
 
 													<option value="+216">+216 (Tunisia)</option>
@@ -222,38 +231,38 @@ function Login() {
 													type="tel"
 													className="form-control"
 													id="phoneNumber"
-													placeholder="Phone Number"
+													placeholder={t('PhoneNumber')}
 													value={phoneNumber}
 													onChange={(e) => setPhoneNumber(e.target.value)}
 													required
 												/>
-												<label htmlFor="phoneNumber">Phone Number</label>
+												<label htmlFor="phoneNumber">{t('PhoneNumber')}</label>
 											</div>
 										)}
 										<div className="d-flex justify-content-center gap-2">
 											<button className="btn btn-primary py-3 px-4" type="submit">
-												{isSignIn ? 'Sign In' : 'Sign Up'}
+												{isSignIn ? t('SignIn') : t('SignUp')}
 											</button>
 											<button
 												type="button"
 												className="btn btn-secondary py-3 px-4"
 												onClick={() => navigate('/')}
 											>
-												Cancel
+												{t('Cancel')}
 											</button>
 										</div>
 									</form>
 									<div className="mt-3 text-start">
 										<small>
 											{isSignIn
-												? 'If you do not have an account, '
-												: 'If you already have an account, '}
+												? t('DoNotHave')
+												: t('AlreadyAccount')}
 											<span
 												className="text-primary"
 												style={{ cursor: 'pointer' }}
 												onClick={() => setIsSignIn(!isSignIn)}
 											>
-												{isSignIn ? 'Sign Up' : 'Sign In'}
+												{isSignIn ? t('SignUp') : t('SignIn')}
 											</span>
 											.
 										</small>

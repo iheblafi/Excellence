@@ -313,7 +313,7 @@ const resources = {
       //////Services  /////VIPTerminal
 
       "AirportVIPTerminal": "Airport VIP Terminal",
-      "AirportVIPTerminalDesc": `Picture a journey that begins not in the crowded halls of a busy airport, but in the serene
+      "AirportVIPTerminalDesc1": `Picture a journey that begins not in the crowded halls of a busy airport, but in the serene
                   exclusivity of a private terminal a space reserved for those who seek both privacy and efficiency. The VIP Terminal Service redefines air travel,
                   offering a seamless and tranquil experience that lets you focus on what matters most: your comfort and peace of mind.
 
@@ -324,29 +324,34 @@ const resources = {
 
                   As you settle into the plush surroundings of the terminal, the stress of traditional travel fades away.
                   A dedicated team ensures every aspect of your journey is perfectly orchestrated, from luggage handling to last-minute requests.
+              `,
+      "AirportVIPTerminalDesc2":  `Whether you're catching up on work, enjoying a quiet moment, or savoring a refreshment, the experience is tailored entirely to you.
 
+      And when it's time to board, the journey continues with seamless precision. A private transfer whisks you directly to your aircraft,
+      bypassing the crowded gates and queues. Every step is designed to protect your time, your privacy, and your sense of ease.
 
-                  Whether you're catching up on work, enjoying a quiet moment, or savoring a refreshment, the experience is tailored entirely to you.
-
-                  And when it's time to board, the journey continues with seamless precision. A private transfer whisks you directly to your aircraft,
-                  bypassing the crowded gates and queues. Every step is designed to protect your time, your privacy, and your sense of ease.
-
-                  The VIP Terminal Service isn't just an upgrade; it's a reimagining of what travel can be. It's a promise of exclusivity,
-                  a commitment to personalization, and an experience where the ordinary is replaced with the extraordinary. From start to finish,
-                  it's air travel as it was always meant to be luxurious, effortless, and uniquely yours. `,
+      The VIP Terminal Service isn't just an upgrade; it's a reimagining of what travel can be. It's a promise of exclusivity,
+      a commitment to personalization, and an experience where the ordinary is replaced with the extraordinary. From start to finish,
+      it's air travel as it was always meant to be luxurious, effortless, and uniquely yours.` ,
 
       "ExploreOurVIPTerminalServices": "Explore Our VIP Terminal Services",
 
+      /// login
+
 
       "YourName": "Your Name",
-      "Welcome Back, Traveler": "",
-      "YourEmail": "",
-      "Password": "",
-      "ConfirmPassword": "",
-      "Select": "",
-      "Phone Number": "",
-      "Cancel": "",
-
+      "WelcomeBackTraveler": "Welcome Back, Traveler",
+      "YourEmail": "Your Email",
+      "Password": "Password",
+      "ConfirmPassword": "Confirm Password",
+      "Select": "Select",
+      "PhoneNumber": "Phone Number",
+      "Cancel": "Cancel",
+      "SignIn": "Sign In",
+      "SignUp": "Sign Up",
+      "CreateAccount": "Create an Account, Traveler",
+      "DoNotHave":"If you do not have an account, ",
+      "AlreadyAccount": "If you already have an account, "
 
 
     },
@@ -663,7 +668,7 @@ const resources = {
       //////Services  /////VIPTerminal
 
       "AirportVIPTerminal": "Terminal VIP de l'aéroport",
-      "AirportVIPTerminalDesc": `Imaginez un voyage qui commence non pas dans les couloirs bondés d'un aéroport, mais dans l'exclusivité sereine d'un terminal privé, un espace réservé à ceux qui recherchent à la fois la confidentialité et l'efficacité.
+      "AirportVIPTerminalDesc1": `Imaginez un voyage qui commence non pas dans les couloirs bondés d'un aéroport, mais dans l'exclusivité sereine d'un terminal privé, un espace réservé à ceux qui recherchent à la fois la confidentialité et l'efficacité.
              Le service VIP Terminal redéfinit le voyage aérien,
             Il vous offre une expérience transparente et tranquille qui vous permet de vous concentrer sur ce qui compte le plus : votre confort et votre tranquillité d'esprit.
       
@@ -672,10 +677,10 @@ const resources = {
              Les procédures de contrôle de sécurité, d'immigration et de douane, qui requièrent souvent votre temps et votre patience, sont gérées en toute tranquillité ce qui vous permet de vous détendre,
 
             Lorsque vous vous installez dans le cadre luxueux du terminal, le stress du voyage traditionnel s'estompe.
-            Une équipe dévouée veille à ce que chaque aspect de votre voyage soit parfaitement orchestré, de la manutention des bagages aux demandes de dernière minute.
+            Une équipe dévouée veille à ce que chaque aspect de votre voyage soit parfaitement orchestré, de la manutention des bagages aux demandes de dernière minute.`,
 
 
-            Que vous soyez en train de travailler, de profiter d'un moment de calme ou de savourer un rafraîchissement, l'expérience est entièrement adaptée à vos besoins.
+          "AirportVIPTerminalDesc2": `Que vous soyez en train de travailler, de profiter d'un moment de calme ou de savourer un rafraîchissement, l'expérience est entièrement adaptée à vos besoins.
             
             Et lorsqu'il est temps d'embarquer, le voyage se poursuit avec une précision sans faille. Un transfert privé vous conduit directement à votre avion,
             en évitant les portes d'embarquement et les files d'attente. Chaque étape est conçue pour protéger votre temps, votre intimité et votre sentiment d'aisance.
@@ -685,6 +690,23 @@ const resources = {
             c'est le voyage aérien tel qu'il a toujours été conçu, luxueux, sans effort et unique en son genre.  `,
 
       "ExploreOurVIPTerminalServices": "Découvrez nos services de terminaux VIP",
+
+
+      ////login
+
+      "YourName": "Votre Nom",
+      "WelcomeBackTraveler": "Bienvenue, voyageur",
+      "YourEmail": "Votre Email",
+      "Password": "Mot de passe",
+      "ConfirmPassword": "Confirmer votre mot de passe",
+      "Select": "Selecter",
+      "PhoneNumber": "Numéro du téléphone",
+      "Cancel": "Annuler",
+      "SignIn": "Connecter",
+      "SignUp": "Registrer",
+      "CreateAccount": "Ajouter un compte, Voyageur",
+      "DoNotHave":"Si vous n'avez pas de compte, ",
+      "AlreadyAccount": "Si vous avez déja un compte, "
 
 
 

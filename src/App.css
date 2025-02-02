@@ -70,7 +70,7 @@
 }
 
 .input-group-text {
-  background-color: transparent; /* Match the input background */
+  background-color: transsparent; /* Match the input background */
   border-left: none; /* Remove left border for seamless integration */
   padding: 0.375rem 0.75rem; /* Adjust padding */
 }
