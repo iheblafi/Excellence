@@ -431,7 +431,7 @@ function Home() {
                 <div className="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="row g-0">
                         <div className="col-md-6">
-                            <img className="img-fluid rounded" src="img/plane2.jpg" alt="" style={{ maxWidth: "100%", height: "auto" }} />
+                            <img className="img-fluid rounded" src="img/plane2.jpg" alt="" style={{ maxWidth: "100%", height: "100%" }} />
 
                         </div>
                         <div className="col-md-6 bg-dark d-flex align-items-center">
@@ -455,7 +455,7 @@ function Home() {
                                         <div className="col-md-6">
                                             <div className="form-floating date" id="date3" data-target-input="nearest">
                                                 <input type="text" className="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                                <label for="datetime">{t('Date & Time')}</label>
+                                                <label for="datetime">{t('Date&Time')}</label>
                                             </div>
                                         </div>
                                         <div className="col-md-6">
@@ -469,12 +469,58 @@ function Home() {
                                             </div>
                                         </div>
                                         <div className="col-md-6">
-                                            <div className="form-floating date" id="date3" data-target-input="nearest">
-                                                <input type="text" className="form-control detailflight-input" id="detailflight" placeholder="Flight details" data-target="#date3" data-toggle="detailflight" />
+                                            <div className="form-floating" id="detailflight" >
+                                                <input type="text" className="form-control detailflight-input" id="detailflight" placeholder="Flight details" data-toggle="detailflight" />
                                                 <label for="detailflight">{t('FlightDetails')}</label>
                                             </div>
                                         </div>
-                                        <div className="col-6">
+                                        <div className="col-md-6">
+                                            <div className="form-floating" id="bugsnumber" >
+                                                <input type="text" className="form-control bagsnumber-input" id="bagsnumber" placeholder="Bugs number"  data-toggle="bugsnumber" />
+                                                <label for="bagsnumber">{t('BagsNumber')}</label>
+                                            </div>
+                                        </div>
+                                        <div className='col-md-4 '>
+                                            <div className="form-floating">
+                                                <select
+                                                    className="form-select"
+                                                    id="countryCode"
+                                                //S	style={{ marginRight: '10px' }}
+                                                //required
+                                                //onChange={(e) => setCountryCode(e.target.value)}
+                                                >
+                                                    <option value="" disabled selected>
+                                                        {t('Select')}
+                                                    </option>
+
+                                                    <option value="+216">+216 (Tunisia)</option>
+                                                    <option value="+33">+33 (France)</option>
+                                                    <option value="+1">+1 (USA)</option>
+                                                    <option value="+44">+44 (UK)</option>
+                                                    <option value="+91">+91 (India)</option>
+                                                    {/* Add more country codes as needed */}
+                                                </select>
+                                                <label htmlFor="countryCode" className="form-label">
+                                                    Code
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className=" col-md-8">
+                                            <div className="form-floating">
+
+                                                <input
+                                                    type="tel"
+                                                    className="form-control"
+                                                    id="phoneNumber"
+                                                    placeholder={t('PhoneNumber')}
+                                                    //value={phoneNumber}
+                                                   //onChange={(e) => setPhoneNumber(e.target.value)}
+                                                    required
+                                                />
+                                                <label htmlFor="phoneNumber">{t('PhoneNumber')}</label>
+                                            </div>
+                                        </div>
+                                        <div className="col-12">
                                             <div className="form-floating">
                                                 <textarea className="form-control" placeholder="Special Request" id="message" ></textarea>
                                                 <label for="message">{t('SpecialRequest')}</label>

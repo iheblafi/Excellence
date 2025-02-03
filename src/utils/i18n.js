@@ -128,6 +128,7 @@ const resources = {
       "NoOfPeople": "No Of People",
       "FlightDetails": "Flight Details",
       "SpecialRequest": "Special Request",
+      "BagsNumber": "Bags Number",
 
       "BookNow": "Book Now",
       "TeamMembers": "Team Members",
@@ -501,6 +502,7 @@ const resources = {
       "FlightDetails": "Détailles de vols",
       "SpecialRequest": "Demande spéciale",
       "BookNow": "Réserver Maintenant",
+      "BagsNumber": "Nombre des valises",
       "TeamMembers": "Membres de l'équipe",
       "OurDrivers": "Nos chauffeurs",
       ////////

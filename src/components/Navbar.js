@@ -341,7 +341,7 @@ const Navbar = () => {
                         </div>
 
                     </div>
-                    <NavLink to="/contactform" className="btn btn-primary py-2 px-4">
+                    <NavLink to="/booking" className="btn btn-primary py-2 px-4">
                         {t('BookAService')}
                     </NavLink>
 
