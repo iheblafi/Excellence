@@ -181,16 +181,16 @@ const resources = {
       "OurGuidingPrinciples": "Our Guiding Principles",
       "OurGuidingPrinciplesDesc": " At Excellence Airport, we believe that every journey begins with an exceptional experience. Our mission is to redefine airport travel by providing high-end, personalized, and seamless services that ensure comfort, efficiency, and luxury for every traveler. From the moment you arrive, our team is dedicated to simplifying the complexities of modern air travel, offering innovative solutions that blend professionalism with genuine care.",
       "OurValues": "Our values are the cornerstone of our commitment to excellence",
-      "CustomerCentric": "Customer-Centric Approach:",
-      "CustomerCentricDesc": "We tailor our services to meet the unique needs of each traveler, whether for business or leisure, ensuring a personalized and memorable experience.",
+      "CustomerCentric": "Customer-Centric Approach",
+      "CustomerCentricDesc": " We tailor our services to meet the unique needs of each traveler, whether for business or leisure, ensuring a personalized and memorable experience.",
       "ExcellenceInService": "Excellence in Service",
       "ExcellenceInServiceDesc": " Our dedication to professionalism and attention to detail guarantees consistently top-tier experiences, leaving no room for compromise.",
       "GlobalAccessibility": "Global Accessibility",
       "GlobalAccessibilityDesc": " With multilingual support in French, English, and Spanish, we embrace inclusivity and ensure smooth communication for our diverse clientele",
       "CommitmenToPrivacy": "Commitment to Privacy and Efficiency",
-      "CommitmenToPrivacyDesc": "Designed for those who value discretion and time, our VIP services, including private terminal access and chauffeur-driven transfers, offer unparalleled convenience.",
+      "CommitmenToPrivacyDesc": " Designed for those who value discretion and time, our VIP services, including private terminal access and chauffeur-driven transfers, offer unparalleled convenience.",
       "SustainabilityAndResponsibility": "Sustainability and Responsibility",
-      "SustainabilityAndResponsibilityDesc": "We adhere to ethical practices, prioritizing the safety and well-being of our clients and team while striving for long-term sustainability.",
+      "SustainabilityAndResponsibilityDesc": " We adhere to ethical practices, prioritizing the safety and well-being of our clients and team while striving for long-term sustainability.",
       "ValuesConclusion": "These values define who we are and guide every decision we make. Excellence Airport is not just a service provider; we are your trusted partner in ensuring that your journey is as remarkable as your destination.",
       "Motto": "Let us manage the details while you enjoy the journey",
 
@@ -227,9 +227,9 @@ const resources = {
       "RCSRegistration": "RCS Registration",
       "RCSRegistrationDesc1": "As a registered company, Excellence Airport adheres to all applicable legal and regulatory requirements. Our registration number is",
       "RCSRegistrationDesc2": "underscoring our commitment to transparency and trustworthiness.",
-      "HostingProvider": "HostingProvider",
+      "HostingProvider": "Hosting Provider",
       "HostingProviderDesc1": "Excellence Airport's website and online services are hosted by",
-      "HostingProviderDesc2": "a reliable hosting provider ensuring robust performance, security, and accessibility for our digital platforms.",
+      "HostingProviderDesc2": " a reliable hosting provider ensuring robust performance, security, and accessibility for our digital platforms.",
       "or": "or",
 
 
@@ -287,7 +287,7 @@ const resources = {
       "LetsTakeARide": "Let's take a ride", 
       "ExploreOurChauffeurDrivenFeatures": "Explore Our Chauffeur Driven Features",
       "ExploreAvailableFleetNow": "Explore our available fleet cars for the time being.",
-      "ExploreVarietyCarModels.": "Explore our variety of fleet car models.",
+      "ExploreVarietyCarModels": "Explore our variety of fleet car models.",
 
       //////Services  /////Meet&Greet
 
@@ -351,7 +351,11 @@ const resources = {
       "SignUp": "Sign Up",
       "CreateAccount": "Create an Account, Traveler",
       "DoNotHave":"If you do not have an account, ",
-      "AlreadyAccount": "If you already have an account, "
+      "AlreadyAccount": "If you already have an account, ",
+      "ConfirmLogout": "Confirm Logout",
+      "Sure":"Are you sure you want to logout?",
+      "Logout": "Logout",
+
 
 
     },
@@ -543,15 +547,15 @@ const resources = {
       "OurGuidingPrinciplesDesc": " Chez Excellence Airport, nous considérons que tout voyage commence par une expérience exceptionnelle. Notre mission est de redéfinir les voyages en aéroport en offrant des services haut de gamme, personnalisés et transparents qui garantissent le comfort, l'efficacité et le luxe pour chaque voyageur. Dès votre arrivée, notre équipe se consacre à simplifier les complexités du voyage aérien moderne, en offrant des solutions innovantes qui combinent le professionnalisme et l'attention sincère.",
       "OurValues": "Nos valeurs sont la pierre fondatrice de notre engagement en faveur de l'excellence.",
       "CustomerCentric": "Approche axée sur le client",
-      "CustomerCentricDesc": "Nous adaptons nos services aux besoins uniques de chaque voyageur, que ce soit pour les affaires ou les loisirs, afin de garantir une expérience personnalisée et mémorable.",
+      "CustomerCentricDesc": " Nous adaptons nos services aux besoins uniques de chaque voyageur, que ce soit pour les affaires ou les loisirs, afin de garantir une expérience personnalisée et mémorable.",
       "ExcellenceInService": "L'excellence dans le service",
-      "ExcellenceInServiceDesc": "Notre professionnalisme et notre attention aux détails garantissent des expériences de premier ordre, sans compromis.",
+      "ExcellenceInServiceDesc": " Notre professionnalisme et notre attention aux détails garantissent des expériences de premier ordre, sans compromis.",
       "GlobalAccessibility": "Accessibilité globale",
-      "GlobalAccessibilityDesc": "Avec une assistance multilingue en français, anglais et espagnol, nous favorisons l'inclusion et assurons une communication fluide pour notre clientèle diversifiée.",
+      "GlobalAccessibilityDesc": " Avec une assistance multilingue en français, anglais et espagnol, nous favorisons l'inclusion et assurons une communication fluide pour notre clientèle diversifiée.",
       "CommitmenToPrivacy": "Engagement en faveur de la confidentialité et de l'efficacité",
-      "CommitmenToPrivacyDesc": "Conçus pour ceux qui privilégient la confidentialité et le temps, nos services VIP, y compris l'accès privé aux terminaux et les transferts avec chauffeur, offrent une commodité inégalée.",
+      "CommitmenToPrivacyDesc": " Conçus pour ceux qui privilégient la confidentialité et le temps, nos services VIP, y compris l'accès privé aux terminaux et les transferts avec chauffeur, offrent une commodité inégalée.",
       "SustainabilityAndResponsibility": "Durabilité et responsabilité",
-      "SustainabilityAndResponsibilityDesc": "Nous adhérons à des pratiques éthiques et donnons la priorité à la sécurité et au bien-être de nos clients et de notre équipe, tout en nous efforçant d'assurer la durabilité à long terme.",
+      "SustainabilityAndResponsibilityDesc": " Nous adhérons à des pratiques éthiques et donnons la priorité à la sécurité et au bien-être de nos clients et de notre équipe, tout en nous efforçant d'assurer la durabilité à long terme.",
       "ValuesConclusion": "Ces valeurs nous définissent et guident chacune de nos décisions. Excellence Airport n'est pas un simple prestataire de services, nous sommes votre partenaire de confiance pour que votre voyage soit aussi remarquable que votre destination.",
       "Motto": "Laissez-nous gérer les détails pendant que vous profitez du voyage",
 
@@ -583,13 +587,13 @@ const resources = {
       "PhoneDesc2": " Nos représentants sont prêts à vous assister pour toutes vos questions.",
       "PhysicalAddress": "Adresse physique",
       "PhysicalAddressDesc1": "Nous rendre visite ou échanger avec nous au siège de l'entreprise",
-      "PhysicalAddressDesc2": "Ici, Nous coordonnons nos services haut de gamme pour des clients du monde entier.",
+      "PhysicalAddressDesc2": "Ici, nous coordonnons nos services haut de gamme pour des clients du monde entier.",
       "RCSRegistration": "Inscription au RCS",
       "RCSRegistrationDesc1": "En tant qu'entreprise enregistrée, Excellence Airport se conforme à toutes les exigences légales et réglementaires applicables. Notre numéro d'enregistrement est le suivant",
       "RCSRegistrationDesc2": "soulignant notre engagement en matière de transparence et de fiabilité.",
       "HostingProvider": "Fournisseur d'hébergement",
       "HostingProviderDesc1": "Le site web et les services en ligne de l'aéroport d'Excellence sont hébergés par",
-      "HostingProviderDesc2": "un fournisseur d'hébergement fiable garantissant des performances, une sécurité et une accessibilité solides pour nos plateformes numériques.",
+      "HostingProviderDesc2": " un fournisseur d'hébergement fiable garantissant des performances, une sécurité et une accessibilité solides pour nos plateformes numériques.",
 
 
 
@@ -644,7 +648,7 @@ const resources = {
       "LetsTakeARide": "Allons-y faire un tour",
       "ExploreOurChauffeurDrivenFeatures": "Découvrez nos services de transport avec chauffeur",
       "ExploreAvailableFleetNow": "Explorez notre flotte de voitures disponibles pour le moment.",
-      "ExploreVarietyCarModels.": "Découvrez notre variété de modèles de voitures de flotte.",
+      "ExploreVarietyCarModels": "Découvrez notre variété de modèles de voitures de flotte.",
 
       //////Services  /////Meet&Greet
 
@@ -706,7 +710,10 @@ const resources = {
       "SignUp": "Registrer",
       "CreateAccount": "Ajouter un compte, Voyageur",
       "DoNotHave":"Si vous n'avez pas de compte, ",
-      "AlreadyAccount": "Si vous avez déja un compte, "
+      "AlreadyAccount": "Si vous avez déja un compte, ",
+      "ConfirmLogout": "Confirmer la déconnexion",
+      "Sure":"Vous vlouez vraiment déconnecter?",
+      "Logout": "Déconnexion",
 
 
 

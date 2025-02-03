@@ -56,10 +56,10 @@ function Support() {
                                     {t('ReachDesc')}
                                 </p>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                                    <strong>{t('DirectorOfPublication')}:</strong> {t('DirectorOfPublicationDesc')}
+                                    <strong><i className="fas fa-check  me-2"></i>{t('DirectorOfPublication')}:</strong> {t('DirectorOfPublicationDesc')}
                                 </p>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                                    <strong>Email:</strong> {t('EmailDesc1')}
+                                    <strong><i className="fas fa-check  me-2"></i>Email:</strong> {t('EmailDesc1')}
                                     <a href="mailto:contact@excellenceairport.fr"> contact@excellenceairport.fr</a>. {t('EmailDesc2')}
                                 </p>
 
@@ -67,17 +67,17 @@ function Support() {
                             <div className="col-lg-12">
 
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                                    <strong>{t('Phone')}:</strong> {t('PhoneDesc1')} <a href="tel:+33699268175">+33699268175</a> {t('or')} <a href="tel:+33699268175">+33781780229</a>. 
+                                    <strong><i className="fas fa-check  me-2"></i>{t('Phone')}:</strong> {t('PhoneDesc1')} <a href="tel:+33699268175">+33699268175</a> {t('or')} <a href="tel:+33699268175">+33781780229</a>. 
                                        {t('PhoneDesc2')}
                                 </p>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                                    <strong>{t('PhysicalAddress')}:</strong> {t('PhysicalAddressDesc1')}:
-                                    <em>{t('AddressDesc')}</em>. {t('PhysicalAddressDesc2')}
+                                    <strong><i className="fas fa-check  me-2"></i>{t('PhysicalAddress')} : </strong>  {t('PhysicalAddressDesc1')}:
+                                    <em> {t('AddressDesc')}</em>. {t('PhysicalAddressDesc2')}
                                 </p>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                                    <strong>{t('RCSRegistration')}:</strong> {t('RCSRegistrationDesc1')} <em>835 232 992 R.C.S. Pontoise</em>, {t('RCSRegistrationDesc2')}</p>
+                                    <strong><i className="fas fa-check  me-2"></i>{t('RCSRegistration')}:</strong> {t('RCSRegistrationDesc1')} <em>835 232 992 R.C.S. Pontoise</em>, {t('RCSRegistrationDesc2')}</p>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                                    <strong>{t('HostingProvider')}:</strong> {t('HostingProviderDesc1')} <em>1&1 Internet SARL</em>,
+                                    <strong><i className="fas fa-check  me-2"></i>{t('HostingProvider')}:</strong> {t('HostingProviderDesc1')} <em>1&1 Internet SARL</em>,
                                     {t('HostingProviderDesc2')}
                                 </p>
                             </div>

@@ -42,7 +42,7 @@ function Login() {
 			setTimeout(() => {
 				navigate("/");
 				window.location.reload();
-			}, 2000);
+			}, 1000);
 
 		} catch (err) {
 			setAlert({ show: true, type: 'danger', message: err?.data?.message || "Login failed." });
@@ -62,7 +62,7 @@ function Login() {
 			setTimeout(() => {
 				navigate("/");
 				window.location.reload();
-			}, 2000);
+			}, 1000);
 
 
 

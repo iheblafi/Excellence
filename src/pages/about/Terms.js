@@ -51,14 +51,14 @@ function Terms() {
                 {t('CommitmentDes')}
                 </p>
                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                    <strong>{t('ReservationAndPaymentTerms')}:</strong> {t('ReservationAndPaymentTermsDesc')}
+                    <strong><i className="fas fa-star  me-2"></i>{t('ReservationAndPaymentTerms')}:</strong> {t('ReservationAndPaymentTermsDesc')}
                 </p>
                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                    <strong>{('DisputeResolutionandLatePayments')}:</strong> {t('DisputeResolutionandLatePaymentsDesc')}
+                    <strong><i className="fas fa-star  me-2"></i>{t('DisputeResolutionandLatePayments')}:</strong> {t('DisputeResolutionandLatePaymentsDesc')}
                 </p>
                 
                 <p className="mb-4" style={{ textAlign: 'justify' }}>
-                    <strong>{t('LegalFramework')}:</strong> {t('LegalFrameworkDesc')}
+                    <strong><i className="fas fa-star  me-2"></i>{t('LegalFramework')}:</strong> {t('LegalFrameworkDesc')}
                 </p>
                 <p className="mb-4" style={{ textAlign: 'justify' }}>
                 {t('CommitmentDes2')}

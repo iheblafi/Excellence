@@ -64,12 +64,12 @@ function Values() {
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
                                 {t('OurValues')}:
                                 </p>
-                                <ul className="mb-4" style={{ textAlign: 'justify', listStyleType: 'circle', marginLeft: '20px' }}>
-                                    <li><strong>{t('CustomerCentric')}:</strong>{t('CustomerCentricDesc')}</li>
-                                    <li><strong>{t('ExcellenceInService')}:</strong>{t('ExcellenceInServiceDesc')}</li>
-                                    <li><strong>{t('GlobalAccessibility')}:</strong>{t('GlobalAccessibilityDesc')}</li>
-                                    <li><strong>{t('CommitmenToPrivacy')}:</strong>{t('CommitmenToPrivacyDesc')}</li>
-                                    <li><strong>{t('SustainabilityAndResponsibility')}:</strong>{t('SustainabilityAndResponsibilityDesc')}</li>
+                                <ul className="mb-4" style={{ textAlign: 'justify', listStyle: "none",  marginLeft: '20px' }}>
+                                    <li style={{ marginBottom:'8px'}}><i className="fas fa-check text-success me-2"></i><strong>{t('CustomerCentric')}:</strong>{t('CustomerCentricDesc')}</li>
+                                    <li style={{ marginBottom:'8px'}}><i className="fas fa-check text-success me-2"></i><strong>{t('ExcellenceInService')}:</strong>{t('ExcellenceInServiceDesc')}</li>
+                                    <li style={{ marginBottom:'8px'}}><i className="fas fa-check text-success me-2"></i><strong>{t('GlobalAccessibility')}:</strong>{t('GlobalAccessibilityDesc')}</li>
+                                    <li style={{ marginBottom:'8px'}}><i className="fas fa-check text-success me-2"></i><strong>{t('CommitmenToPrivacy')}:</strong>{t('CommitmenToPrivacyDesc')}</li>
+                                    <li style={{ marginBottom:'8px'}}><i className="fas fa-check text-success me-2"></i><strong>{t('SustainabilityAndResponsibility')}:</strong>{t('SustainabilityAndResponsibilityDesc')}</li>
                                 </ul>
                                 <p className="mb-4" style={{ textAlign: 'justify' }}>
                                 {t('ValuesConclusion')}
