@@ -44,8 +44,8 @@ const resources = {
       "Contact": "Contact",
       "9StreetJean": "9 Street Jean-Jacques Rousseau",
       "Opening": "Opening",
-      "MondaySaturday": "Monday - Saturday",
-      "Sunday": "Sunday",
+      "Open24/7": "Open 24/7 all week.",
+      "Always": "Always Here for You!",
       "AllRightReserved.": "All Right Reserved.",
       "Company": "Company",
 
@@ -406,8 +406,8 @@ const resources = {
       "Contact": "Contact",
       "9StreetJean": "9 Rue Jean-Jacques Rousseau",
       "Opening": "Ouverture",
-      "MondaySaturday": "Lundi - Samedi",
-      "Sunday": "Dimanche",
+      "Open24/7": "Ouvert 24/7 toute la semaine.",
+      "Always": "Toujours là pour vous !",
       "AllRightReserved.": "Tous droits réservés.",
 
 

@@ -29,10 +29,8 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 text-start">
                         <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">{t('Opening')}</h4>
-                        <h5 className="text-light fw-normal">{t('MondaySaturday')}</h5>
-                        <p>09AM - 09PM</p>
-                        <h5 className="text-light fw-normal">{t('Sunday')}</h5>
-                        <p>10AM - 08PM</p>
+                        <p className="text-light fw-normal"><i className="fas fa-clock me-2"></i>{t('Open24/7')}</p>  
+                        <p className="text-light fw-normal">{t('Always')}</p>                   
                     </div>
 
                 </div>
