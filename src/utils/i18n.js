@@ -34,6 +34,9 @@ const resources = {
       "BookingHistory": "Booking History",
       "PaymentMethods": "Payment Methods",
       "BookService": "Book A Service",
+      "Details": "Details",
+      "Bags": "Bags",
+
 
 
 
@@ -125,10 +128,12 @@ const resources = {
       "People1": "People 1",
       "People2": "People 2",
       "People3": "People 3",
+      "Persons": "Persons ",
       "NoOfPeople": "No Of People",
       "FlightDetails": "Flight Details",
       "SpecialRequest": "Special Request",
       "BagsNumber": "Bags Number",
+      "ServiceType": "Service Type",
 
       "BookNow": "Book Now",
       "TeamMembers": "Team Members",
@@ -393,6 +398,8 @@ const resources = {
       "PaymentMethods": "Méthodes de paiment",
       //////
       "BookService": "Réserver une service",
+      "Details": "Détails",
+      "Bags": "Valises",
 
 
 
@@ -498,6 +505,7 @@ const resources = {
       "People1": "Personne 1",
       "People2": "Personne 2",
       "People3": "Personne 3",
+      "Persons": "Personnes ",
       "NoOfPeople": "No De Personne",
       "FlightDetails": "Détailles de vols",
       "SpecialRequest": "Demande spéciale",
@@ -505,6 +513,9 @@ const resources = {
       "BagsNumber": "Nombre des valises",
       "TeamMembers": "Membres de l'équipe",
       "OurDrivers": "Nos chauffeurs",
+      "ServiceType": "Type de service",
+      "Meet&Greet_": "MEET_&_GREET",
+      
       ////////
 
       ////About //Company

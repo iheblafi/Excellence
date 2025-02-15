@@ -78,3 +78,9 @@
 .input-group-text i {
   font-size: 1rem; /* Adjust icon size */
 }
+
+@media (min-width: 992px) {
+  .desktop-left {
+      left: -90px !important;
+  }
+}

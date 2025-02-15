@@ -17,8 +17,8 @@ const Navbar = () => {
     const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
-        if (userInfo?.name) {
-            setUserName(userInfo.name);
+        if (userInfo?.profile?.fullName) {
+            setUserName(userInfo?.profile?.fullName);
         } else {
             setUserName(""); // Reset if userInfo is null
         }
@@ -32,6 +32,7 @@ const Navbar = () => {
     const handleLogout = () => {
         dispatch(logout());
         navigate('/');
+        setShowModal(false)
         // Perform any additional logout logic (e.g., clearing tokens)
     };
 
@@ -189,52 +190,25 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <div className="nav-item dropdown">
-                            {/* <a
-                            href="#"
-                            className="nav-link dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                        >
-                            {t('UserAccount')}
-                        </a> */}
+                        
 
-                            {/* <a
-                            href="#"
-                            className="nav-link dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                        >
-                            <i className="fas fa-user"></i> */}
-                            {/* <span className="ms-2">{t('User Account')}</span> */}
-                            {/* </a> */}
+                    </div>
+                    <NavLink to="/booking" className="btn btn-primary py-2 px-4">
+                        {t('BookAService')}
+                    </NavLink>
 
+                    <div className='d-none d-lg-block px-2' >
+                    <Languages />
+                </div>
 
-                            {/* <div className="dropdown-menu m-0">
-                            <NavLink
-                                to="/profile"
-                                className="dropdown-item"
-                            >
-                                Profile
-                            </NavLink>
-                            <NavLink
-                                to="/bookinghistory"
-                                className="dropdown-item"
-                            >
-                                {t('BookingHistory')}
-                            </NavLink>
-                            <NavLink
-                                to="/payment"
-                                className="dropdown-item"
-                            >
-                                {t('PaymentMethods')}
-                            </NavLink>
-
-                       ss </div> */}
-
+                <div className="nav-item dropdown">
+                            
                             <a
                                 href="#"
                                 className={`nav-link ${isAuthenticated ? 'dropdown-toggle' : ''}`}
                                 data-bs-toggle={isAuthenticated ? 'dropdown' : ''}
                                 onClick={handleUserClick}
+                                style={{color: "white"}}
                             >
                                 <i className="fas fa-user"></i>
                                 {isAuthenticated && (
@@ -243,7 +217,7 @@ const Navbar = () => {
 
 
                             {isAuthenticated && (
-                                <div className="dropdown-menu m-0">
+                                <div className="dropdown-menu m-0 desktop-left" >
                                     <NavLink
                                         to="/profile"
                                         className="dropdown-item"
@@ -262,14 +236,7 @@ const Navbar = () => {
                                     >
                                         {t('PaymentMethods')}
                                     </NavLink>
-                                    {/* <button
-                                        className="dropdown-item text-danger"
-                                        onClick={() => {
-                                            handleLogout(); // Call logout function
-                                        }}
-                                    >
-                                        {t('Logout')}
-                                    </button> */}
+                                   
 
                                     <button
                                         className="dropdown-item text-danger"
@@ -340,16 +307,8 @@ const Navbar = () => {
                             </Modal>
                         </div>
 
-                    </div>
-                    <NavLink to="/booking" className="btn btn-primary py-2 px-4">
-                        {t('BookAService')}
-                    </NavLink>
-
-
                 </div>
-                <div className='d-none d-lg-block px-2' >
-                    <Languages />
-                </div>
+                
             </nav>
         </div>
     );
