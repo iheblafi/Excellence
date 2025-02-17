@@ -21,11 +21,11 @@ function Booking() {
         phoneNumber: userInfo ? userInfo.phoneNumber : '',
         bookingDate: '',
         persons: '',
-        details: '',
+       // details: '',
         valises: '',
-        type:'MEET_&_GREET',
+        type: '',
         specialRequest: '',
-        
+
     });
 
     const onSubmit = async (e) => {
@@ -34,9 +34,9 @@ function Booking() {
         try {
             const user = await book({ ...formValues, token: userInfo.accessToken }).unwrap();
             setAlert({ show: true, type: 'success', message: 'Booking is sent successfully!' });
-            setTimeout(() => {	
-				window.location.reload();
-			}, 1000);
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000);
             // Handle success
         } catch (err) {
             // Handle error
@@ -161,7 +161,7 @@ function Booking() {
                                                 </div>
                                             </>
                                         )}
-                                        <div className="col-md-6">
+                                        <div className="col-md-12">
                                             <DatePicker
                                                 selected={formValues.bookingDate} // Bind the selected date
                                                 onChange={date => setFormValues({ ...formValues, bookingDate: format(date, "dd/MM/yyyy") })}
@@ -184,7 +184,7 @@ function Booking() {
                                                 <label htmlFor="persons">{t('Persons')}</label>
                                             </div>
                                         </div>
-                                        <div className="col-md-6">
+                                        {/* <div className="col-md-6">
                                             <div className="form-floating">
                                                 <input
                                                     type="text"
@@ -197,7 +197,7 @@ function Booking() {
                                                 />
                                                 <label htmlFor="detailflight">{t('Details')}</label>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className="col-md-6">
                                             <div className="form-floating">
                                                 <input
@@ -209,14 +209,15 @@ function Booking() {
                                                     value={formValues.valises} // Bind value
                                                     onChange={handleChange} // Handle change
                                                 />
-                                                <label htmlFor="valises">{t('Bags')}</label>
+                                                <label htmlFor="valises">{t('BagsNumber')}</label>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-floating">
                                                 <select class="form-select" id="select2"
-                                                value={formValues.type} // Bind to formValues.type
-                                                onChange={(e) => setFormValues({ ...formValues, type: e.target.value })} >
+                                                    value={formValues.type} // Bind to formValues.type
+                                                    onChange={(e) => setFormValues({ ...formValues, type: e.target.value })} >
+                                                    <option value="" disabled>{t('SelectServiceType')}</option> {/* Placeholder option */}
                                                     <option value="MEET_&_GREET">{t('Meet&Greet')}</option>
                                                     <option value="VIP_TERMINAL">{t('VIPTerminal')}</option>
                                                     <option value="CHAUFFEUR_DRIVEN_TRANSFERS">{t('ChauffeurDrivenTransfers')}</option>
